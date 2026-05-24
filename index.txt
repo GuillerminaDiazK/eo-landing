@@ -42,7 +42,7 @@
     <span>Ver cómo funciona</span>
   </a>
 </div>
-      </div>
+    
     </section>
   </header>
 
