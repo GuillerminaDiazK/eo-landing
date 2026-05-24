@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EO | Viaja mejor. Vive más. Recuerda siempre.</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero" id="inicio">
+    <img class="hero-img" src="assets/img/fondo-hero-montana.jpg" alt="Persona sosteniendo un celular con la app EO frente a un paisaje de montaña" />
+    <div class="hero-shade" aria-hidden="true"></div>
+
+    <nav class="topbar" aria-label="Navegación principal">
+      <div class="brand-group">
+        <img class="brand-logo" src="assets/logos/logo-eo-blanco.png" alt="EO" />
+        <span class="brand-line" aria-hidden="true"></span>
+        <p class="brand-copy">Viaja mejor.<br />Vive más. Recuerda siempre.</p>
+      </div>
+      <div class="nav-links">
+        <a href="#preguntas">Preguntas frecuentes</a>
+        <a href="#descarga">Descarga la app</a>
+      </div>
+    </nav>
+
+    <section class="hero-message" aria-label="Presentación EO">
+      <h1>
+        <span class="h-orange">Organiza,</span>
+        <span class="h-magenta">vive y</span>
+        <span class="h-turquoise">recuerda</span>
+        <span class="h-cream">todo tu viaje en</span>
+        <span class="h-yellow">una sola app</span>
+      </h1>
+     <div class="hero-actions">
+  <a href="#descarga" class="cta cta-download">
+    <img src="assets/icons/icon-descarga.svg" alt="" aria-hidden="true">
+    <span>Descargar gratis ahora</span>
+  </a>
+
+  <a href="#beneficios" class="cta cta-outline">
+    <img src="assets/icons/icon-ver.svg" alt="" aria-hidden="true">
+    <span>Ver cómo funciona</span>
+  </a>
+</div>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="benefits" id="beneficios">
+      <div class="wrap">
+        <h2>Descarga, crea tu cuenta y<br /><em>disfruta el viaje sin preocupaciones</em></h2>
+
+        <div class="feature-grid" aria-label="Beneficios de EO">
+          <article class="feature feature-orange">
+            <div class="feature-icon"><img src="assets/icons/icon-organiza.svg" alt="" aria-hidden="true" /></div>
+            <h3>Organiza</h3>
+            <p>Guarda reservas, documentos, tickets, itinerarios y listas en un solo lugar.</p>
+          </article>
+
+          <article class="feature feature-magenta">
+            <div class="feature-icon"><img src="assets/icons/icon-vive.svg" alt="" aria-hidden="true" /></div>
+            <h3>Vive</h3>
+            <p>Registra momentos, fotos, audios y notas para no perder ningún detalle.</p>
+          </article>
+
+          <article class="feature feature-turquoise">
+            <div class="feature-icon"><img src="assets/icons/icon-recuerda.svg" alt="" aria-hidden="true" /></div>
+            <h3>Recuerda</h3>
+            <p>Convierte cada viaje en una bitácora para volver a disfrutarlo cuando quieras.</p>
+          </article>
+
+          <article class="feature feature-green">
+            <div class="feature-icon"><img src="assets/icons/icon-sostenible.svg" alt="" aria-hidden="true" /></div>
+            <h3>Hazlo sostenible</h3>
+            <p>Encuentra tips y lugares de consumo local y responsable para viajar de forma consciente.</p>
+          </article>
+        </div>
+
+        <div class="check-row" aria-label="Ventajas principales">
+          <div class="check-item"><span>✓</span><strong>Menos estrés antes de viajar</strong></div>
+          <div class="check-item"><span>✓</span><strong>Más presencia durante el viaje</strong></div>
+          <div class="check-item"><span>✓</span><strong>Un recuerdo para siempre</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq" id="preguntas">
+      <div class="faq-wrap">
+        <h2>Preguntas frecuentes</h2>
+        <div class="faq-grid">
+          <div>
+            <article>
+              <h3>¿Qué es EO?</h3>
+              <p>EO es un ecosistema digital pensado para organizar, vivir y conservar cada viaje en un solo lugar.</p>
+              <p>Permite planificar la experiencia antes de partir, registrar momentos durante el viaje y transformar esos recuerdos en una bitácora digital o en un archivo listo para imprimir.</p>
+            </article>
+            <article>
+              <h3>¿Para quién está pensada la plataforma?</h3>
+              <p>Está pensada para personas que disfrutan viajar y quieren guardar sus experiencias de una manera más ordenada, emocional y significativa.</p>
+              <p>Es ideal para viajeros que suelen usar muchas aplicaciones, notas, fotos, maps y documentos por separado, y buscan una herramienta que unifique todo el proceso.</p>
+            </article>
+            <article>
+              <h3>¿Qué puedo hacer dentro de EO?</h3>
+              <p>Dentro de EO podés organizar itinerarios, guardar información importante, registrar momentos del viaje, sumar fotos, videos, textos y ubicaciones, y construir una bitácora personalizada.</p>
+              <p>También podés editar esos recuerdos después del viaje para convertirlos en una memoria digital más cuidada y coherente.</p>
+            </article>
+          </div>
+          <div>
+            <article>
+              <h3>¿EO sirve solo para planificar viajes?</h3>
+              <p>No. EO acompaña las tres etapas de la experiencia viajera: la planificación, la vivencia y el recuerdo.</p>
+              <p>La idea no es solo ayudarte a organizar mejor un viaje, sino también permitirte capturar lo vivido y conservarlo de una forma más personal, visual y duradera.</p>
+            </article>
+            <article>
+              <h3>¿Puedo convertir mi viaje en un recuerdo físico?</h3>
+              <p>Sí. Una de las funciones principales de EO es permitir que el usuario exporte su bitácora en formato PDF de alta calidad, pensado para impresión.</p>
+              <p>De esta manera, el viaje no queda perdido entre archivos, fotos sueltas o aplicaciones, sino que puede transformarse en una memoria tangible.</p>
+            </article>
+            <article>
+              <h3>¿Debo pagar algo para usar EO?</h3>
+              <p>EO contará con una versión gratuita que permitirá acceder a las funciones principales para organizar, registrar y conservar tus viajes.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="descarga">
+    <img class="footer-img" src="assets/img/fondo-footer-mujer.jpg" alt="Mujer observando un paisaje de montaña" />
+    <div class="footer-content">
+      <div class="footer-brand">
+        <img src="assets/logos/logo-eo-blanco.png" alt="EO" />
+        <span aria-hidden="true"></span>
+        <p><strong>Descárgala ahora</strong><br />y empieza a vivir tu aventura.</p>
+      </div>
+      <div class="store-badges">
+        <a href="#" aria-label="Descargar en App Store"><img src="assets/img/app-store-badge.png" alt="Download on the App Store" /></a>
+        <a href="#" aria-label="Descargar en Google Play"><img src="assets/img/google-play-badge.png" alt="Android app on Google Play" /></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
