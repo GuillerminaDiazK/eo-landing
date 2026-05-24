@@ -1053,8 +1053,8 @@ a { text-decoration: none; color: inherit; }
 
   /* ÍCONO DESCARGA GRANDE */
   .cta-download > img {
-    width: 58px !important;
-    height: 58px !important;
+    width: 70px !important;
+    height: 70px !important;
     min-width: 58px !important;
     flex: 0 0 58px !important;
 
