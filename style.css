@@ -652,10 +652,6 @@ a {
   /* =========================
      HERO MOBILE
      ========================= */
-/* =========================================================
-   RESPONSIVE MOBILE EO — según referencia enviada
-   ========================================================= */
-
 @media (max-width: 700px) {
 
   body {
@@ -685,48 +681,36 @@ a {
   }
 
   .hero-shade {
-    display: block !important;
     position: absolute !important;
     inset: 0 !important;
     z-index: 1 !important;
+    display: block !important;
     pointer-events: none !important;
     background:
-      linear-gradient(
-        90deg,
-        rgba(6, 8, 10, .90) 0%,
-        rgba(6, 8, 10, .74) 36%,
-        rgba(6, 8, 10, .34) 64%,
-        rgba(6, 8, 10, .08) 100%
-      ),
-      linear-gradient(
-        180deg,
-        rgba(6, 8, 10, .55) 0%,
-        rgba(6, 8, 10, .10) 46%,
-        rgba(6, 8, 10, .58) 100%
-      ) !important;
+      linear-gradient(90deg, rgba(6,8,10,.88) 0%, rgba(6,8,10,.70) 34%, rgba(6,8,10,.28) 66%, rgba(6,8,10,.08) 100%),
+      linear-gradient(180deg, rgba(6,8,10,.55) 0%, rgba(6,8,10,.10) 48%, rgba(6,8,10,.58) 100%) !important;
   }
 
   /* =========================
-     HEADER SOBRE LA FOTO
+     HEADER SOBRE HERO
      ========================= */
 
   .topbar {
     position: absolute !important;
     z-index: 5 !important;
-
     top: 12px !important;
     left: 16px !important;
     right: 16px !important;
+
+    width: auto !important;
+    padding: 0 !important;
+    background: transparent !important;
 
     display: flex !important;
     flex-direction: row !important;
     align-items: flex-start !important;
     justify-content: space-between !important;
     gap: 10px !important;
-
-    width: auto !important;
-    padding: 0 !important;
-    background: transparent !important;
   }
 
   .brand-group {
@@ -744,14 +728,13 @@ a {
   .brand-line {
     width: 1px !important;
     height: 22px !important;
-    background: rgba(255, 255, 255, .9) !important;
+    background: rgba(255,255,255,.9) !important;
   }
 
   .brand-copy {
     margin: 0 !important;
     color: #ffffff !important;
-
-    font-size: 7.5px !important;
+    font-size: 7px !important;
     line-height: 1.05 !important;
     font-weight: 400 !important;
     letter-spacing: 0 !important;
@@ -767,7 +750,6 @@ a {
     padding: 2px 0 0 !important;
 
     display: flex !important;
-    flex-direction: row !important;
     align-items: center !important;
     justify-content: flex-end !important;
     gap: 18px !important;
@@ -785,18 +767,18 @@ a {
   }
 
   /* =========================
-     TÍTULO + CTAS SOBRE LA FOTO
+     TÍTULO + BOTONES
      ========================= */
 
   .hero-message {
     position: absolute !important;
     z-index: 4 !important;
 
-    top: 68px !important;
+    top: 66px !important;
     left: 16px !important;
     right: auto !important;
 
-    width: 190px !important;
+    width: 175px !important;
     padding: 0 !important;
     background: transparent !important;
   }
@@ -809,8 +791,8 @@ a {
     align-items: flex-start !important;
 
     font-weight: 900 !important;
-    line-height: .80 !important;
-    letter-spacing: .1px !important;
+    line-height: .76 !important;
+    letter-spacing: .05px !important;
   }
 
   .hero-message h1 span {
@@ -820,8 +802,8 @@ a {
   .h-orange,
   .h-magenta,
   .h-turquoise {
-    font-size: 30px !important;
-    line-height: .80 !important;
+    font-size: 27px !important;
+    line-height: .76 !important;
   }
 
   .h-orange {
@@ -838,19 +820,17 @@ a {
 
   .h-cream {
     color: var(--cream) !important;
-
-    font-size: 18px !important;
-    line-height: .90 !important;
-    letter-spacing: 1.5px !important;
+    font-size: 16px !important;
+    line-height: .86 !important;
+    letter-spacing: 1.2px !important;
     margin-top: 3px !important;
     font-weight: 400 !important;
   }
 
   .h-yellow {
     color: var(--yellow) !important;
-
-    font-size: 23px !important;
-    line-height: .86 !important;
+    font-size: 20px !important;
+    line-height: .82 !important;
     margin-top: 0 !important;
     font-weight: 900 !important;
   }
@@ -859,10 +839,10 @@ a {
     display: flex !important;
     flex-direction: column !important;
     align-items: flex-start !important;
-    gap: 9px !important;
+    gap: 7px !important;
 
     width: 100% !important;
-    margin-top: 22px !important;
+    margin-top: 15px !important;
   }
 
   .cta {
@@ -879,16 +859,17 @@ a {
     color: var(--cream) !important;
     white-space: nowrap !important;
     overflow: hidden !important;
+    text-decoration: none !important;
   }
 
   .cta-download {
-    width: 164px !important;
-    height: 31px !important;
+    width: 156px !important;
+    height: 30px !important;
 
-    padding: 0 8px 0 5px !important;
+    padding: 0 7px 0 5px !important;
     gap: 4px !important;
 
-    font-size: 13px !important;
+    font-size: 12px !important;
     font-weight: 400 !important;
 
     background: linear-gradient(
@@ -901,37 +882,37 @@ a {
   }
 
   .cta-download > img {
-    width: 25px !important;
-    height: 25px !important;
-    min-width: 25px !important;
-    flex: 0 0 25px !important;
+    width: 24px !important;
+    height: 24px !important;
+    min-width: 24px !important;
+    flex: 0 0 24px !important;
 
     max-width: none !important;
     object-fit: contain !important;
-    transform: scale(1.25) !important;
+    transform: scale(1.18) !important;
     transform-origin: center !important;
   }
 
   .cta-outline {
-    width: 86px !important;
-    height: 22px !important;
+    width: 82px !important;
+    height: 21px !important;
 
     padding: 0 5px !important;
     gap: 2px !important;
 
-    font-size: 7.5px !important;
+    font-size: 7px !important;
     font-weight: 400 !important;
 
     color: var(--cream) !important;
-    background: rgba(29, 33, 38, .18) !important;
-    border: 1px solid rgba(255, 255, 255, .82) !important;
+    background: rgba(29,33,38,.18) !important;
+    border: 1px solid rgba(255,255,255,.82) !important;
   }
 
   .cta-outline > img {
-    width: 13px !important;
-    height: 13px !important;
-    min-width: 13px !important;
-    flex: 0 0 13px !important;
+    width: 12px !important;
+    height: 12px !important;
+    min-width: 12px !important;
+    flex: 0 0 12px !important;
 
     max-width: none !important;
     object-fit: contain !important;
@@ -1188,7 +1169,7 @@ a {
   .footer-brand span {
     width: 1.5px !important;
     height: 32px !important;
-    background: rgba(255, 255, 255, .9) !important;
+    background: rgba(255,255,255,.9) !important;
   }
 
   .footer-brand p {
