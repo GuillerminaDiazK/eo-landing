@@ -816,27 +816,35 @@ a { text-decoration: none; color: inherit; }
    Header negro + foto debajo + título y CTAs correctos
    ========================= */
 
+/* ==================================================
+   RESPONSIVE MOBILE FINAL EO
+   Desktop adaptado correctamente a mobile
+   ================================================== */
+
 @media (max-width: 700px) {
 
-  /* HERO GENERAL */
+  /* =========================
+     HERO / CABECERA
+     ========================= */
+
   .hero {
     position: relative !important;
     display: flex !important;
     flex-direction: column !important;
-    background: #080b0d !important;
+    width: 100% !important;
     min-height: auto !important;
     height: auto !important;
+    background: #080b0d !important;
     overflow: visible !important;
   }
 
-  /* HEADER NEGRO ARRIBA */
+  /* Header negro separado */
   .topbar {
     position: relative !important;
-    z-index: 10 !important;
-
     top: auto !important;
     left: auto !important;
     right: auto !important;
+    z-index: 10 !important;
 
     width: 100% !important;
     padding: 22px 22px 18px !important;
@@ -864,7 +872,7 @@ a { text-decoration: none; color: inherit; }
   .brand-line {
     width: 1.5px !important;
     height: 38px !important;
-    background: rgba(255, 255, 255, .9) !important;
+    background: rgba(255,255,255,.9) !important;
   }
 
   .brand-copy {
@@ -882,14 +890,13 @@ a { text-decoration: none; color: inherit; }
 
   .nav-links {
     width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
 
     display: flex !important;
-    justify-content: flex-start !important;
     align-items: center !important;
-    gap: 28px !important;
-
-    margin-right: 0 !important;
-    padding-top: 0 !important;
+    justify-content: flex-start !important;
+    gap: 26px !important;
 
     color: #ffffff !important;
     font-size: 14px !important;
@@ -897,7 +904,7 @@ a { text-decoration: none; color: inherit; }
     font-weight: 400 !important;
   }
 
-  /* FOTO COMPLETA DEBAJO DEL HEADER */
+  /* Foto completa, debajo del header */
   .hero-img {
     position: relative !important;
     display: block !important;
@@ -914,35 +921,37 @@ a { text-decoration: none; color: inherit; }
     display: none !important;
   }
 
-  /* TÍTULO + CTAS DEBAJO DE LA FOTO */
+  /* Título + CTAs debajo de la foto */
   .hero-message {
     position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
     z-index: 5 !important;
 
-    left: auto !important;
-    top: auto !important;
-    right: auto !important;
-
+    display: block !important;
     width: 100% !important;
-    padding: 30px 22px 40px !important;
 
+    padding: 30px 22px 42px !important;
     background: #080b0d !important;
   }
 
   .hero-message h1 {
+    margin: 0 !important;
+
     display: flex !important;
     flex-direction: column !important;
     align-items: flex-start !important;
 
-    margin: 0 !important;
     line-height: .80 !important;
+    letter-spacing: .2px !important;
   }
 
   .h-orange,
   .h-magenta,
   .h-turquoise {
     display: block !important;
-    font-size: clamp(44px, 14vw, 64px) !important;
+    font-size: clamp(44px, 13.8vw, 62px) !important;
     line-height: .80 !important;
   }
 
@@ -950,9 +959,9 @@ a { text-decoration: none; color: inherit; }
     display: block !important;
     color: var(--cream) !important;
 
-    font-size: clamp(23px, 7vw, 32px) !important;
-    line-height: .9 !important;
-    letter-spacing: 2.2px !important;
+    font-size: clamp(22px, 7vw, 31px) !important;
+    line-height: .92 !important;
+    letter-spacing: 2px !important;
     margin-top: 4px !important;
     font-weight: 400 !important;
   }
@@ -961,12 +970,15 @@ a { text-decoration: none; color: inherit; }
     display: block !important;
     color: var(--yellow) !important;
 
-    font-size: clamp(31px, 9.4vw, 44px) !important;
-    line-height: .86 !important;
+    font-size: clamp(30px, 9.2vw, 43px) !important;
+    line-height: .88 !important;
     margin-top: 0 !important;
   }
 
-  /* BOTONES CTA */
+  /* =========================
+     BOTONES CTA HERO
+     ========================= */
+
   .hero-actions {
     display: flex !important;
     width: 100% !important;
@@ -979,7 +991,7 @@ a { text-decoration: none; color: inherit; }
   }
 
   .cta {
-    height: 54px !important;
+    height: 56px !important;
     border-radius: 8px !important;
 
     display: inline-flex !important;
@@ -995,10 +1007,10 @@ a { text-decoration: none; color: inherit; }
   }
 
   .cta-download {
-    width: 335px !important;
+    width: 342px !important;
     max-width: calc(100vw - 44px) !important;
 
-    padding: 0 22px 0 18px !important;
+    padding: 0 24px 0 18px !important;
     gap: 8px !important;
 
     font-size: 18px !important;
@@ -1013,43 +1025,43 @@ a { text-decoration: none; color: inherit; }
   }
 
   .cta-outline {
-    width: 245px !important;
+    width: 250px !important;
     max-width: calc(100vw - 44px) !important;
 
     padding: 0 15px !important;
-    gap: 3px !important;
+    gap: 2px !important;
 
     font-size: 16px !important;
     font-weight: 400 !important;
 
     color: var(--cream) !important;
     background: rgba(29, 33, 38, .14) !important;
-    border: 1.4px solid rgba(255, 255, 255, .82) !important;
+    border: 1.4px solid rgba(255,255,255,.82) !important;
   }
 
-  /* ÍCONO DESCARGA MÁS GRANDE */
+  /* Ícono descarga grande y visible */
   .cta-download > img {
-    width: 44px !important;
-    height: 44px !important;
-    min-width: 44px !important;
-    flex: 0 0 44px !important;
+    width: 48px !important;
+    height: 48px !important;
+    min-width: 48px !important;
+    flex: 0 0 48px !important;
 
     max-width: none !important;
     object-fit: contain !important;
-    transform: scale(1.15) !important;
+    transform: scale(1.08) !important;
     transform-origin: center !important;
   }
 
-  /* ÍCONO PLAY BIEN PROPORCIONADO */
+  /* Ícono play */
   .cta-outline > img {
-    width: 38px !important;
-    height: 38px !important;
-    min-width: 38px !important;
-    flex: 0 0 38px !important;
+    width: 40px !important;
+    height: 40px !important;
+    min-width: 40px !important;
+    flex: 0 0 40px !important;
 
     max-width: none !important;
     object-fit: contain !important;
-    transform: scale(1.1) !important;
+    transform: scale(1.08) !important;
     transform-origin: center !important;
   }
 
@@ -1059,7 +1071,10 @@ a { text-decoration: none; color: inherit; }
     transform: translateY(1px) !important;
   }
 
-  /* BENEFICIOS: CADA ITEM DEBAJO DEL OTRO */
+  /* =========================
+     BENEFICIOS
+     ========================= */
+
   .wrap,
   .faq-wrap {
     width: calc(100% - 40px) !important;
@@ -1069,14 +1084,16 @@ a { text-decoration: none; color: inherit; }
 
   .benefits {
     padding: 56px 0 0 !important;
+    background: var(--cream) !important;
   }
 
   .benefits h2 {
-    margin: 0 0 90px !important;
+    margin: 0 0 92px !important;
+
     text-align: center !important;
-    font-size: 28px !important;
-    line-height: 1.15 !important;
-    letter-spacing: 1px !important;
+    font-size: 27px !important;
+    line-height: 1.14 !important;
+    letter-spacing: .8px !important;
   }
 
   .feature-grid {
@@ -1086,14 +1103,19 @@ a { text-decoration: none; color: inherit; }
   }
 
   .feature {
+    position: relative !important;
+
     min-height: auto !important;
     height: auto !important;
+
     padding: 92px 26px 38px !important;
     border-radius: 24px !important;
 
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
+
+    text-align: center !important;
   }
 
   .feature-icon {
@@ -1113,6 +1135,7 @@ a { text-decoration: none; color: inherit; }
 
   .feature h3 {
     margin: 0 0 24px !important;
+
     font-size: 31px !important;
     line-height: 1 !important;
     font-weight: 900 !important;
@@ -1122,10 +1145,10 @@ a { text-decoration: none; color: inherit; }
     max-width: 320px !important;
     margin: 0 auto !important;
 
-    font-size: 21px !important;
+    font-size: 20px !important;
     line-height: 1.22 !important;
     font-weight: 400 !important;
-    letter-spacing: .2px !important;
+    letter-spacing: .1px !important;
   }
 
   .feature-green h3 {
@@ -1135,11 +1158,14 @@ a { text-decoration: none; color: inherit; }
 
   .feature-green p {
     max-width: 320px !important;
-    font-size: 20px !important;
-    line-height: 1.2 !important;
+    font-size: 19px !important;
+    line-height: 1.22 !important;
   }
 
-  /* CHECKS */
+  /* =========================
+     CHECKS
+     ========================= */
+
   .check-row {
     margin: 58px auto 0 !important;
 
@@ -1175,13 +1201,18 @@ a { text-decoration: none; color: inherit; }
     line-height: 1 !important;
   }
 
-  /* FAQ EN UNA COLUMNA */
+  /* =========================
+     FAQ UNA COLUMNA
+     ========================= */
+
   .faq {
     padding: 66px 0 78px !important;
+    background: var(--cream) !important;
   }
 
   .faq h2 {
     margin-bottom: 28px !important;
+
     font-size: 20px !important;
     line-height: 1 !important;
   }
@@ -1189,6 +1220,7 @@ a { text-decoration: none; color: inherit; }
   .faq-grid {
     display: grid !important;
     grid-template-columns: 1fr !important;
+    column-gap: 0 !important;
     row-gap: 0 !important;
   }
 
@@ -1204,5 +1236,101 @@ a { text-decoration: none; color: inherit; }
   .faq p {
     font-size: 15.5px !important;
     line-height: 1.32 !important;
+  }
+
+  /* =========================
+     FOOTER
+     ========================= */
+
+  .footer {
+    position: relative !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+
+    min-height: auto !important;
+    height: auto !important;
+
+    background: var(--graphite) !important;
+    overflow: visible !important;
+  }
+
+  .footer-img {
+    position: relative !important;
+    display: block !important;
+
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100% !important;
+
+    transform: none !important;
+    object-fit: contain !important;
+  }
+
+  .footer-content {
+    position: relative !important;
+    inset: auto !important;
+    z-index: 5 !important;
+
+    width: 100% !important;
+    padding: 24px 22px 28px !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+    gap: 22px !important;
+
+    background: var(--graphite) !important;
+  }
+
+  .footer-brand {
+    display: flex !important;
+    align-items: center !important;
+    gap: 12px !important;
+  }
+
+  .footer-brand img {
+    width: 82px !important;
+    height: auto !important;
+  }
+
+  .footer-brand span {
+    width: 1.5px !important;
+    height: 38px !important;
+    background: rgba(255,255,255,.9) !important;
+  }
+
+  .footer-brand p {
+    margin: 0 !important;
+
+    color: #ffffff !important;
+    font-size: 16px !important;
+    line-height: 1.08 !important;
+    font-weight: 400 !important;
+    min-width: 0 !important;
+  }
+
+  .footer-brand strong {
+    font-weight: 900 !important;
+  }
+
+  .store-badges {
+    position: relative !important;
+    left: auto !important;
+    bottom: auto !important;
+
+    margin-left: 0 !important;
+
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+    flex-wrap: wrap !important;
+  }
+
+  .store-badges img {
+    height: 42px !important;
+    width: auto !important;
+    max-width: none !important;
   }
 }
