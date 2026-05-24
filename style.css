@@ -1393,11 +1393,20 @@ a { text-decoration: none; color: inherit; }
     font-size: 16px !important;
   }
 
-  .cta-download > img {
-    width: 42px !important;
-    height: 42px !important;
-    min-width: 42px !important;
-    flex: 0 0 42px !important;
+   .cta-download > img {
+    width: 56px !important;
+    height: 56px !important;
+    min-width: 56px !important;
+    flex: 0 0 56px !important;
+    max-width: none !important;
+    object-fit: contain !important;
+    transform: scale(1.08) !important;
+    transform-origin: center !important;
+  }
+
+  .cta-download {
+    gap: 4px !important;
+    padding-left: 10px !important;
   }
 
   .cta-outline {
