@@ -652,46 +652,69 @@ a {
   /* =========================
      HERO MOBILE
      ========================= */
+/* =========================================================
+   RESPONSIVE MOBILE EO — según referencia enviada
+   ========================================================= */
 
- @media (max-width: 700px) {
+@media (max-width: 700px) {
 
   body {
     overflow-x: hidden;
   }
 
-  /* HERO */
+  /* =========================
+     HERO
+     ========================= */
+
   .hero {
     position: relative !important;
     width: 100% !important;
+    height: auto !important;
+    min-height: auto !important;
     background: #080b0d !important;
     overflow: hidden !important;
   }
 
   .hero-img {
+    display: block !important;
     width: 100% !important;
     height: auto !important;
-    display: block !important;
     max-width: 100% !important;
     object-fit: contain !important;
     transform: none !important;
   }
 
   .hero-shade {
+    display: block !important;
     position: absolute !important;
     inset: 0 !important;
-    display: block !important;
     z-index: 1 !important;
     pointer-events: none !important;
     background:
-      linear-gradient(90deg, rgba(6,8,10,.88) 0%, rgba(6,8,10,.72) 34%, rgba(6,8,10,.28) 65%, rgba(6,8,10,.05) 100%),
-      linear-gradient(180deg, rgba(6,8,10,.58) 0%, rgba(6,8,10,.12) 48%, rgba(6,8,10,.60) 100%) !important;
+      linear-gradient(
+        90deg,
+        rgba(6, 8, 10, .90) 0%,
+        rgba(6, 8, 10, .74) 36%,
+        rgba(6, 8, 10, .34) 64%,
+        rgba(6, 8, 10, .08) 100%
+      ),
+      linear-gradient(
+        180deg,
+        rgba(6, 8, 10, .55) 0%,
+        rgba(6, 8, 10, .10) 46%,
+        rgba(6, 8, 10, .58) 100%
+      ) !important;
   }
 
-  /* HEADER SOBRE LA FOTO */
+  /* =========================
+     HEADER SOBRE LA FOTO
+     ========================= */
+
   .topbar {
     position: absolute !important;
     z-index: 5 !important;
-    top: 13px !important;
+
+    top: 12px !important;
     left: 16px !important;
     right: 16px !important;
 
@@ -699,7 +722,7 @@ a {
     flex-direction: row !important;
     align-items: flex-start !important;
     justify-content: space-between !important;
-    gap: 12px !important;
+    gap: 10px !important;
 
     width: auto !important;
     padding: 0 !important;
@@ -714,21 +737,22 @@ a {
   }
 
   .brand-logo {
-    width: 39px !important;
+    width: 40px !important;
     height: auto !important;
   }
 
   .brand-line {
     width: 1px !important;
     height: 22px !important;
-    background: rgba(255,255,255,.9) !important;
+    background: rgba(255, 255, 255, .9) !important;
   }
 
   .brand-copy {
     margin: 0 !important;
     color: #ffffff !important;
+
     font-size: 7.5px !important;
-    line-height: 1.08 !important;
+    line-height: 1.05 !important;
     font-weight: 400 !important;
     letter-spacing: 0 !important;
   }
@@ -760,16 +784,19 @@ a {
     white-space: nowrap !important;
   }
 
-  /* TÍTULO + CTAS SOBRE LA FOTO */
+  /* =========================
+     TÍTULO + CTAS SOBRE LA FOTO
+     ========================= */
+
   .hero-message {
     position: absolute !important;
     z-index: 4 !important;
+
     top: 68px !important;
     left: 16px !important;
     right: auto !important;
 
-    display: block !important;
-    width: 185px !important;
+    width: 190px !important;
     padding: 0 !important;
     background: transparent !important;
   }
@@ -811,8 +838,9 @@ a {
 
   .h-cream {
     color: var(--cream) !important;
+
     font-size: 18px !important;
-    line-height: .9 !important;
+    line-height: .90 !important;
     letter-spacing: 1.5px !important;
     margin-top: 3px !important;
     font-weight: 400 !important;
@@ -820,6 +848,7 @@ a {
 
   .h-yellow {
     color: var(--yellow) !important;
+
     font-size: 23px !important;
     line-height: .86 !important;
     margin-top: 0 !important;
@@ -830,7 +859,7 @@ a {
     display: flex !important;
     flex-direction: column !important;
     align-items: flex-start !important;
-    gap: 10px !important;
+    gap: 9px !important;
 
     width: 100% !important;
     margin-top: 22px !important;
@@ -847,13 +876,15 @@ a {
     font-weight: 400 !important;
     line-height: 1 !important;
 
+    color: var(--cream) !important;
     white-space: nowrap !important;
     overflow: hidden !important;
   }
 
   .cta-download {
-    width: 163px !important;
+    width: 164px !important;
     height: 31px !important;
+
     padding: 0 8px 0 5px !important;
     gap: 4px !important;
 
@@ -877,13 +908,14 @@ a {
 
     max-width: none !important;
     object-fit: contain !important;
-    transform: scale(1.22) !important;
+    transform: scale(1.25) !important;
     transform-origin: center !important;
   }
 
   .cta-outline {
-    width: 84px !important;
+    width: 86px !important;
     height: 22px !important;
+
     padding: 0 5px !important;
     gap: 2px !important;
 
@@ -891,8 +923,8 @@ a {
     font-weight: 400 !important;
 
     color: var(--cream) !important;
-    background: rgba(29,33,38,.18) !important;
-    border: 1px solid rgba(255,255,255,.82) !important;
+    background: rgba(29, 33, 38, .18) !important;
+    border: 1px solid rgba(255, 255, 255, .82) !important;
   }
 
   .cta-outline > img {
@@ -913,23 +945,28 @@ a {
     transform: translateY(.5px) !important;
   }
 
-  /* BENEFICIOS */
+  /* =========================
+     BENEFICIOS
+     ========================= */
+
   .wrap,
   .faq-wrap {
     width: calc(100% - 48px) !important;
-    max-width: 420px !important;
+    max-width: 430px !important;
     margin: 0 auto !important;
   }
 
   .benefits {
-    padding: 24px 0 0 !important;
+    padding: 32px 0 0 !important;
     background: var(--cream) !important;
   }
 
   .benefits h2 {
-    margin: 0 0 78px !important;
+    margin: 0 0 76px !important;
+
     text-align: center !important;
     color: var(--orange) !important;
+
     font-size: 26px !important;
     line-height: 1.08 !important;
     letter-spacing: 1.1px !important;
@@ -949,6 +986,7 @@ a {
 
   .feature {
     position: relative !important;
+
     min-height: 214px !important;
     height: auto !important;
 
@@ -979,6 +1017,7 @@ a {
 
   .feature h3 {
     margin: 0 0 22px !important;
+
     font-size: 21px !important;
     line-height: 1 !important;
     font-weight: 900 !important;
@@ -987,6 +1026,7 @@ a {
   .feature p {
     max-width: 145px !important;
     margin: 0 auto !important;
+
     color: var(--graphite) !important;
     font-size: 16px !important;
     line-height: 1.08 !important;
@@ -1005,7 +1045,10 @@ a {
     line-height: 1.08 !important;
   }
 
-  /* CHECKS */
+  /* =========================
+     CHECKS
+     ========================= */
+
   .check-row {
     margin: 40px auto 0 !important;
 
@@ -1036,10 +1079,18 @@ a {
     width: 30px !important;
     height: 30px !important;
     flex: 0 0 30px !important;
+
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
     font-size: 21px !important;
   }
 
-  /* FAQ */
+  /* =========================
+     FAQ
+     ========================= */
+
   .faq {
     padding: 46px 0 56px !important;
     background: var(--cream) !important;
@@ -1047,8 +1098,10 @@ a {
 
   .faq h2 {
     margin: 0 0 25px !important;
+
     color: #238f8e !important;
     text-transform: uppercase !important;
+
     font-size: 15px !important;
     line-height: 1 !important;
     font-weight: 900 !important;
@@ -1068,6 +1121,7 @@ a {
 
   .faq h3 {
     margin: 0 0 15px !important;
+
     color: #238f8e !important;
     font-size: 12px !important;
     line-height: 1.25 !important;
@@ -1076,6 +1130,7 @@ a {
 
   .faq p {
     margin: 0 0 19px !important;
+
     color: #121416 !important;
     font-size: 13.2px !important;
     line-height: 1.42 !important;
@@ -1084,7 +1139,10 @@ a {
     text-align: justify !important;
   }
 
-  /* FOOTER */
+  /* =========================
+     FOOTER
+     ========================= */
+
   .footer {
     position: relative !important;
     width: 100% !important;
@@ -1093,12 +1151,12 @@ a {
   }
 
   .footer-img {
+    display: block !important;
     width: 100% !important;
     height: auto !important;
     max-width: 100% !important;
-    display: block !important;
-    transform: none !important;
     object-fit: contain !important;
+    transform: none !important;
   }
 
   .footer-content {
@@ -1130,11 +1188,12 @@ a {
   .footer-brand span {
     width: 1.5px !important;
     height: 32px !important;
-    background: rgba(255,255,255,.9) !important;
+    background: rgba(255, 255, 255, .9) !important;
   }
 
   .footer-brand p {
     margin: 0 !important;
+
     color: #ffffff !important;
     font-size: 12px !important;
     line-height: 1.05 !important;
