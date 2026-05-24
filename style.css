@@ -815,7 +815,7 @@ a { text-decoration: none; color: inherit; }
 @media (max-width: 700px) {
 
   /* =========================
-     HERO MOBILE
+     HERO MOBILE: HEADER SEPARADO + FOTO ENTERA
      ========================= */
 
   .hero {
@@ -823,6 +823,9 @@ a { text-decoration: none; color: inherit; }
     min-height: auto;
     background: #080b0d;
     overflow: hidden;
+
+    /* espacio para que el header quede arriba de la foto */
+    padding-top: 96px;
   }
 
   .hero-img {
@@ -833,35 +836,52 @@ a { text-decoration: none; color: inherit; }
     transform: none;
   }
 
+  /* Overlay solo sobre la zona de la foto, no sobre el header */
   .hero-shade {
     position: absolute;
-    inset: 0;
+    left: 0;
+    right: 0;
+    top: 96px;
+    bottom: 0;
     background:
       linear-gradient(
         90deg,
-        rgba(6, 8, 10, .92) 0%,
-        rgba(6, 8, 10, .78) 45%,
-        rgba(6, 8, 10, .35) 100%
+        rgba(6, 8, 10, .86) 0%,
+        rgba(6, 8, 10, .58) 48%,
+        rgba(6, 8, 10, .18) 100%
       ),
       linear-gradient(
         180deg,
-        rgba(6, 8, 10, .55) 0%,
-        rgba(6, 8, 10, .18) 45%,
-        rgba(6, 8, 10, .65) 100%
+        rgba(6, 8, 10, .40) 0%,
+        rgba(6, 8, 10, .08) 46%,
+        rgba(6, 8, 10, .48) 100%
       );
+    pointer-events: none;
   }
 
+  /* Header mobile separado arriba de la foto */
   .topbar {
-    top: 22px;
-    left: 22px;
-    right: 22px;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
 
+    height: 96px;
+    padding: 18px 20px;
+
+    display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: flex-start;
-    gap: 14px;
+
+    gap: 12px;
+    background: #080b0d;
   }
 
   .brand-group {
+    display: flex;
+    align-items: center;
     gap: 12px;
   }
 
@@ -873,9 +893,12 @@ a { text-decoration: none; color: inherit; }
   .brand-line {
     width: 1.5px;
     height: 34px;
+    background: rgba(255,255,255,.9);
   }
 
   .brand-copy {
+    margin: 0;
+    color: var(--white);
     font-size: 14px;
     line-height: 1.05;
     letter-spacing: .1px;
@@ -887,124 +910,59 @@ a { text-decoration: none; color: inherit; }
   }
 
   .nav-links {
-    width: 100%;
+    display: flex;
     justify-content: flex-start;
+    align-items: center;
+
+    width: 100%;
     gap: 24px;
 
     padding-top: 0;
     margin-right: 0;
 
+    color: var(--white);
     font-size: 12px;
     line-height: 1;
+    font-weight: 600;
   }
 
+  /* Título sobre la foto */
   .hero-message {
+    position: absolute;
+    z-index: 5;
+
     left: 22px;
     top: 132px;
     width: calc(100% - 44px);
   }
 
   .hero-message h1 {
+    margin: 0;
     line-height: .80;
   }
 
   .h-orange,
   .h-magenta,
   .h-turquoise {
-    font-size: clamp(39px, 12vw, 56px);
+    font-size: clamp(38px, 12vw, 54px);
   }
 
   .h-cream {
-    font-size: clamp(20px, 6.5vw, 29px);
+    font-size: clamp(19px, 6.4vw, 28px);
     line-height: .9;
-    letter-spacing: 2.2px;
+    letter-spacing: 2px;
     margin-top: 2px;
     font-weight: 400;
   }
 
   .h-yellow {
-    font-size: clamp(27px, 8.5vw, 38px);
+    font-size: clamp(26px, 8.4vw, 36px);
     line-height: .86;
   }
 
-
-  /* =========================
-     BOTONES HERO MOBILE
-     ========================= */
-
+  /* En mobile dejamos solo el título sobre la imagen */
   .hero-actions {
-    width: 100%;
-    margin-top: 30px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 11px;
-  }
-
-  .cta {
-    height: 52px;
-    border-radius: 8px;
-
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-
-    font-family: "AmsiPro", Arial, sans-serif;
-    line-height: 1;
-    font-weight: 400;
-
-    white-space: nowrap;
-    overflow: hidden;
-  }
-
-  .cta-download {
-    width: 100%;
-    max-width: 325px;
-    padding: 0 20px 0 18px;
-    gap: 9px;
-
-    font-size: 17px;
-  }
-
-  .cta-outline {
-    width: 100%;
-    max-width: 235px;
-    padding: 0 15px;
-    gap: 4px;
-
-    font-size: 15.5px;
-    font-weight: 400;
-  }
-
-  .cta-download > img {
-    width: 38px !important;
-    height: 38px !important;
-    min-width: 38px !important;
-    flex: 0 0 38px !important;
-
-    max-width: none !important;
-    object-fit: contain;
-    transform: scale(1.12);
-    transform-origin: center;
-  }
-
-  .cta-outline > img {
-    width: 36px !important;
-    height: 36px !important;
-    min-width: 36px !important;
-    flex: 0 0 36px !important;
-
-    max-width: none !important;
-    object-fit: contain;
-    transform: scale(1.10);
-    transform-origin: center;
-  }
-
-  .cta span {
-    display: inline-block;
-    white-space: nowrap;
-    transform: translateY(1px);
+    display: none;
   }
 
 
@@ -1088,12 +1046,10 @@ a { text-decoration: none; color: inherit; }
 
   .check-row {
     margin-top: 54px;
-
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 14px;
-
     max-width: 100%;
   }
 
@@ -1155,7 +1111,7 @@ a { text-decoration: none; color: inherit; }
 
 
   /* =========================
-     FOOTER MOBILE
+     FOOTER MOBILE: FOTO ENTERA + BADGES ABAJO
      ========================= */
 
   .footer {
@@ -1163,6 +1119,9 @@ a { text-decoration: none; color: inherit; }
     min-height: auto;
     background: var(--graphite);
     overflow: hidden;
+
+    /* espacio inferior para los botones de descarga */
+    padding-bottom: 74px;
   }
 
   .footer-img {
@@ -1174,15 +1133,28 @@ a { text-decoration: none; color: inherit; }
   }
 
   .footer-content {
-    padding: 26px 22px;
+    position: absolute;
+    z-index: 5;
 
+    top: 0;
+    left: 0;
+    right: 0;
+
+    /* ocupa solo la altura visual de la foto, no el espacio de los badges */
+    height: calc(100% - 74px);
+
+    padding: 0 22px;
+
+    display: flex;
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    gap: 20px;
+    gap: 18px;
   }
 
   .footer-brand {
+    display: flex;
+    align-items: center;
     gap: 10px;
   }
 
@@ -1194,22 +1166,38 @@ a { text-decoration: none; color: inherit; }
   .footer-brand span {
     width: 1.5px;
     height: 31px;
+    background: rgba(255,255,255,.9);
   }
 
   .footer-brand p {
+    margin: 0;
+    color: var(--white);
     font-size: 13.5px;
     line-height: 1.05;
     min-width: 0;
   }
 
+  .footer-brand strong {
+    font-weight: 900;
+  }
+
+  /* Badges debajo de la foto */
   .store-badges {
-    margin-left: 0;
+    position: absolute;
+    left: 22px;
+    bottom: -56px;
+
+    display: flex;
+    align-items: center;
     gap: 8px;
     flex-wrap: wrap;
+
+    margin-left: 0;
   }
 
   .store-badges img {
-    height: 36px;
+    height: 38px;
     width: auto;
+    max-width: none;
   }
 }
