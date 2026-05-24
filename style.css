@@ -824,7 +824,7 @@ a { text-decoration: none; color: inherit; }
 @media (max-width: 700px) {
 
   /* =========================
-     HERO / CABECERA
+     HERO MOBILE
      ========================= */
 
   .hero {
@@ -832,21 +832,22 @@ a { text-decoration: none; color: inherit; }
     display: flex !important;
     flex-direction: column !important;
     width: 100% !important;
-    min-height: auto !important;
     height: auto !important;
+    min-height: auto !important;
     background: #080b0d !important;
     overflow: visible !important;
   }
 
-  /* Header negro separado */
+  /* HEADER NEGRO ARRIBA */
   .topbar {
     position: relative !important;
     top: auto !important;
     left: auto !important;
     right: auto !important;
-    z-index: 10 !important;
+    z-index: 20 !important;
 
     width: 100% !important;
+    height: auto !important;
     padding: 22px 22px 18px !important;
 
     display: flex !important;
@@ -872,12 +873,13 @@ a { text-decoration: none; color: inherit; }
   .brand-line {
     width: 1.5px !important;
     height: 38px !important;
-    background: rgba(255,255,255,.9) !important;
+    background: rgba(255, 255, 255, .9) !important;
   }
 
   .brand-copy {
     margin: 0 !important;
     color: #ffffff !important;
+
     font-size: 16px !important;
     line-height: 1.05 !important;
     font-weight: 400 !important;
@@ -889,11 +891,14 @@ a { text-decoration: none; color: inherit; }
   }
 
   .nav-links {
+    position: relative !important;
+
     width: 100% !important;
     margin: 0 !important;
     padding: 0 !important;
 
     display: flex !important;
+    flex-direction: row !important;
     align-items: center !important;
     justify-content: flex-start !important;
     gap: 26px !important;
@@ -902,9 +907,15 @@ a { text-decoration: none; color: inherit; }
     font-size: 14px !important;
     line-height: 1 !important;
     font-weight: 400 !important;
+    letter-spacing: .1px !important;
   }
 
-  /* Foto completa, debajo del header */
+  .nav-links a {
+    color: #ffffff !important;
+    white-space: nowrap !important;
+  }
+
+  /* FOTO HERO DEBAJO DEL HEADER, SIN RECORTE */
   .hero-img {
     position: relative !important;
     display: block !important;
@@ -921,7 +932,7 @@ a { text-decoration: none; color: inherit; }
     display: none !important;
   }
 
-  /* Título + CTAs debajo de la foto */
+  /* TÍTULO + BOTONES DEBAJO DE LA FOTO */
   .hero-message {
     position: relative !important;
     top: auto !important;
@@ -1007,13 +1018,14 @@ a { text-decoration: none; color: inherit; }
   }
 
   .cta-download {
-    width: 342px !important;
+    width: 350px !important;
     max-width: calc(100vw - 44px) !important;
 
-    padding: 0 24px 0 18px !important;
-    gap: 8px !important;
+    padding: 0 22px 0 12px !important;
+    gap: 4px !important;
 
     font-size: 18px !important;
+    font-weight: 400 !important;
 
     background: linear-gradient(
       90deg,
@@ -1036,15 +1048,15 @@ a { text-decoration: none; color: inherit; }
 
     color: var(--cream) !important;
     background: rgba(29, 33, 38, .14) !important;
-    border: 1.4px solid rgba(255,255,255,.82) !important;
+    border: 1.4px solid rgba(255, 255, 255, .82) !important;
   }
 
-  /* Ícono descarga grande y visible */
+  /* ÍCONO DESCARGA GRANDE */
   .cta-download > img {
-    width: 48px !important;
-    height: 48px !important;
-    min-width: 48px !important;
-    flex: 0 0 48px !important;
+    width: 58px !important;
+    height: 58px !important;
+    min-width: 58px !important;
+    flex: 0 0 58px !important;
 
     max-width: none !important;
     object-fit: contain !important;
@@ -1052,16 +1064,16 @@ a { text-decoration: none; color: inherit; }
     transform-origin: center !important;
   }
 
-  /* Ícono play */
+  /* ÍCONO PLAY */
   .cta-outline > img {
-    width: 40px !important;
-    height: 40px !important;
-    min-width: 40px !important;
-    flex: 0 0 40px !important;
+    width: 42px !important;
+    height: 42px !important;
+    min-width: 42px !important;
+    flex: 0 0 42px !important;
 
     max-width: none !important;
     object-fit: contain !important;
-    transform: scale(1.08) !important;
+    transform: scale(1.06) !important;
     transform-origin: center !important;
   }
 
@@ -1072,7 +1084,7 @@ a { text-decoration: none; color: inherit; }
   }
 
   /* =========================
-     BENEFICIOS
+     CONTENEDORES
      ========================= */
 
   .wrap,
@@ -1081,6 +1093,10 @@ a { text-decoration: none; color: inherit; }
     max-width: 430px !important;
     margin: 0 auto !important;
   }
+
+  /* =========================
+     BENEFICIOS MOBILE
+     ========================= */
 
   .benefits {
     padding: 56px 0 0 !important;
@@ -1239,7 +1255,7 @@ a { text-decoration: none; color: inherit; }
   }
 
   /* =========================
-     FOOTER
+     FOOTER MOBILE
      ========================= */
 
   .footer {
