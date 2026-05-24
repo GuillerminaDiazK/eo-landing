@@ -642,10 +642,6 @@ a {
    RESPONSIVE MOBILE EO — NUEVO DESDE CERO
    SOLO MOBILE HASTA 700PX
    ========================================================= */
-/* =========================================================
-   RESPONSIVE MOBILE EO — FINAL CORREGIDO
-   ========================================================= */
-
 @media (max-width: 700px) {
 
   body {
@@ -653,13 +649,13 @@ a {
   }
 
   /* =========================
-     HERO MOBILE
+     HERO
      ========================= */
 
   .hero {
     position: relative !important;
     width: 100% !important;
-    height: clamp(270px, 67vw, 450px) !important;
+    height: clamp(270px, 67vw, 470px) !important;
     min-height: 270px !important;
     background: #080b0d !important;
     overflow: hidden !important;
@@ -690,27 +686,27 @@ a {
       linear-gradient(
         90deg,
         rgba(6, 8, 10, .92) 0%,
-        rgba(6, 8, 10, .76) 38%,
-        rgba(6, 8, 10, .30) 68%,
+        rgba(6, 8, 10, .76) 35%,
+        rgba(6, 8, 10, .32) 66%,
         rgba(6, 8, 10, .08) 100%
       ),
       linear-gradient(
         180deg,
         rgba(6, 8, 10, .52) 0%,
-        rgba(6, 8, 10, .10) 50%,
+        rgba(6, 8, 10, .08) 48%,
         rgba(6, 8, 10, .58) 100%
       ) !important;
   }
 
   /* =========================
-     HEADER MOBILE
+     HEADER SOBRE FOTO
      ========================= */
 
   .topbar {
     position: absolute !important;
     z-index: 10 !important;
 
-    top: clamp(11px, 3vw, 20px) !important;
+    top: clamp(10px, 2.9vw, 20px) !important;
     left: clamp(16px, 4vw, 28px) !important;
     right: clamp(16px, 4vw, 28px) !important;
 
@@ -729,19 +725,19 @@ a {
   .brand-group {
     display: flex !important;
     align-items: center !important;
-    gap: clamp(6px, 1.6vw, 10px) !important;
+    gap: clamp(6px, 1.5vw, 10px) !important;
     flex: 0 0 auto !important;
   }
 
   .brand-logo {
-    width: clamp(40px, 10vw, 70px) !important;
+    width: clamp(40px, 9.8vw, 68px) !important;
     height: auto !important;
   }
 
   .brand-line {
     display: block !important;
     width: 1px !important;
-    height: clamp(22px, 5.5vw, 38px) !important;
+    height: clamp(22px, 5.4vw, 38px) !important;
     background: rgba(255, 255, 255, .9) !important;
   }
 
@@ -749,7 +745,7 @@ a {
     margin: 0 !important;
     color: #ffffff !important;
 
-    font-size: clamp(7px, 1.8vw, 12px) !important;
+    font-size: clamp(7px, 1.75vw, 12px) !important;
     line-height: 1.05 !important;
     font-weight: 400 !important;
     letter-spacing: 0 !important;
@@ -764,10 +760,10 @@ a {
     flex-direction: row !important;
     align-items: center !important;
     justify-content: flex-end !important;
-    gap: clamp(12px, 4.3vw, 28px) !important;
+    gap: clamp(14px, 4.2vw, 28px) !important;
 
     color: #ffffff !important;
-    font-size: clamp(9px, 2.3vw, 14px) !important;
+    font-size: clamp(9px, 2.35vw, 14px) !important;
     line-height: 1 !important;
     font-weight: 600 !important;
     letter-spacing: 0 !important;
@@ -786,14 +782,13 @@ a {
     position: absolute !important;
     z-index: 9 !important;
 
-    top: clamp(64px, 16vw, 118px) !important;
+    top: clamp(66px, 16.7vw, 118px) !important;
     left: clamp(16px, 4vw, 28px) !important;
     right: auto !important;
 
-    width: clamp(165px, 42vw, 300px) !important;
+    width: clamp(175px, 43.5vw, 300px) !important;
     padding: 0 !important;
     margin: 0 !important;
-
     background: transparent !important;
   }
 
@@ -805,8 +800,9 @@ a {
     align-items: flex-start !important;
 
     font-weight: 900 !important;
-    line-height: .72 !important;
+    line-height: .76 !important;
     letter-spacing: 0 !important;
+    transform: none !important;
   }
 
   .hero-message h1 span {
@@ -816,8 +812,9 @@ a {
   .hero .hero-message h1 .h-orange,
   .hero .hero-message h1 .h-magenta,
   .hero .hero-message h1 .h-turquoise {
-    font-size: clamp(24px, 6.4vw, 42px) !important;
-    line-height: .72 !important;
+    font-size: clamp(28px, 7.1vw, 48px) !important;
+    line-height: .76 !important;
+    transform: none !important;
   }
 
   .hero .hero-message h1 .h-orange {
@@ -835,20 +832,22 @@ a {
   .hero .hero-message h1 .h-cream {
     color: var(--cream) !important;
 
-    font-size: clamp(14px, 3.8vw, 25px) !important;
-    line-height: .84 !important;
-    letter-spacing: clamp(1px, .25vw, 2px) !important;
+    font-size: clamp(16px, 4.35vw, 29px) !important;
+    line-height: .88 !important;
+    letter-spacing: clamp(1px, .3vw, 2px) !important;
     margin-top: 3px !important;
     font-weight: 400 !important;
+    transform: none !important;
   }
 
   .hero .hero-message h1 .h-yellow {
     color: var(--yellow) !important;
 
-    font-size: clamp(18px, 4.9vw, 32px) !important;
-    line-height: .82 !important;
+    font-size: clamp(21px, 5.55vw, 37px) !important;
+    line-height: .86 !important;
     margin-top: 0 !important;
     font-weight: 900 !important;
+    transform: none !important;
   }
 
   .hero-actions {
@@ -858,7 +857,11 @@ a {
     gap: clamp(7px, 1.8vw, 10px) !important;
 
     width: 100% !important;
-    margin-top: clamp(13px, 3.5vw, 23px) !important;
+    margin-top: clamp(18px, 5vw, 30px) !important;
+
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
   }
 
   .cta {
@@ -879,13 +882,13 @@ a {
   }
 
   .cta-download {
-    width: clamp(154px, 39vw, 260px) !important;
-    height: clamp(29px, 7.2vw, 48px) !important;
+    width: clamp(162px, 40vw, 270px) !important;
+    height: clamp(31px, 7.6vw, 51px) !important;
 
-    padding: 0 clamp(7px, 2vw, 14px) 0 clamp(5px, 1.5vw, 10px) !important;
+    padding: 0 clamp(8px, 2vw, 14px) 0 clamp(5px, 1.4vw, 10px) !important;
     gap: clamp(4px, 1vw, 8px) !important;
 
-    font-size: clamp(11.5px, 3vw, 19px) !important;
+    font-size: clamp(12.5px, 3.15vw, 20px) !important;
     font-weight: 400 !important;
 
     background: linear-gradient(
@@ -898,10 +901,10 @@ a {
   }
 
   .cta-download > img {
-    width: clamp(23px, 6vw, 40px) !important;
-    height: clamp(23px, 6vw, 40px) !important;
-    min-width: clamp(23px, 6vw, 40px) !important;
-    flex: 0 0 clamp(23px, 6vw, 40px) !important;
+    width: clamp(25px, 6vw, 41px) !important;
+    height: clamp(25px, 6vw, 41px) !important;
+    min-width: clamp(25px, 6vw, 41px) !important;
+    flex: 0 0 clamp(25px, 6vw, 41px) !important;
 
     max-width: none !important;
     object-fit: contain !important;
@@ -911,13 +914,13 @@ a {
   }
 
   .cta-outline {
-    width: clamp(82px, 21vw, 140px) !important;
-    height: clamp(21px, 5.3vw, 35px) !important;
+    width: clamp(84px, 21vw, 145px) !important;
+    height: clamp(21px, 5.3vw, 36px) !important;
 
-    padding: 0 clamp(5px, 1.5vw, 10px) !important;
+    padding: 0 clamp(5px, 1.3vw, 10px) !important;
     gap: clamp(2px, .6vw, 4px) !important;
 
-    font-size: clamp(7px, 1.8vw, 12px) !important;
+    font-size: clamp(7px, 1.75vw, 12px) !important;
     font-weight: 400 !important;
 
     color: var(--cream) !important;
@@ -1142,25 +1145,22 @@ a {
   .footer {
     position: relative !important;
     width: 100% !important;
-    height: auto !important;
-    min-height: 0 !important;
-    max-height: none !important;
-
+    height: 126px !important;
     background: var(--graphite) !important;
     overflow: hidden !important;
   }
 
   .footer-img {
-    position: relative !important;
-    inset: auto !important;
+    position: absolute !important;
+    inset: 0 !important;
 
     display: block !important;
 
     width: 100% !important;
-    height: auto !important;
-    max-width: 100% !important;
+    height: 100% !important;
+    max-width: none !important;
 
-    object-fit: contain !important;
+    object-fit: cover !important;
     object-position: center center !important;
     transform: none !important;
   }
@@ -1195,7 +1195,7 @@ a {
   .footer-brand span {
     width: 1.5px !important;
     height: 32px !important;
-    background: rgba(255,255,255,.9) !important;
+    background: rgba(255, 255, 255, .9) !important;
   }
 
   .footer-brand p {
