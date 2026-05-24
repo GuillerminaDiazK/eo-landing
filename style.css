@@ -643,6 +643,10 @@ a {
    SOLO MOBILE HASTA 700PX
    ========================================================= */
 
+/* =========================================================
+   RESPONSIVE MOBILE EO — FINAL SEGÚN REFERENCIA
+   ========================================================= */
+
 @media (max-width: 700px) {
 
   body {
@@ -656,62 +660,73 @@ a {
   .hero {
     position: relative !important;
     width: 100% !important;
+    height: clamp(250px, 64.6vw, 300px) !important;
+    min-height: 250px !important;
+    max-height: 300px !important;
     background: #080b0d !important;
     overflow: hidden !important;
   }
 
   .hero-img {
-    display: block !important;
+    position: absolute !important;
+    inset: 0 !important;
+
     width: 100% !important;
-    height: auto !important;
-    max-width: 100% !important;
-    object-fit: contain !important;
+    height: 100% !important;
+    max-width: none !important;
+
+    display: block !important;
+    object-fit: cover !important;
+    object-position: center center !important;
     transform: none !important;
   }
 
   .hero-shade {
-    display: block !important;
     position: absolute !important;
     inset: 0 !important;
     z-index: 1 !important;
+    display: block !important;
     pointer-events: none !important;
+
     background:
       linear-gradient(
         90deg,
-        rgba(6, 8, 10, .90) 0%,
-        rgba(6, 8, 10, .76) 34%,
-        rgba(6, 8, 10, .32) 66%,
+        rgba(6, 8, 10, .92) 0%,
+        rgba(6, 8, 10, .74) 38%,
+        rgba(6, 8, 10, .32) 68%,
         rgba(6, 8, 10, .08) 100%
       ),
       linear-gradient(
         180deg,
-        rgba(6, 8, 10, .56) 0%,
-        rgba(6, 8, 10, .12) 48%,
+        rgba(6, 8, 10, .52) 0%,
+        rgba(6, 8, 10, .10) 48%,
         rgba(6, 8, 10, .58) 100%
       ) !important;
   }
 
   /* =========================
-     HEADER SOBRE FOTO
+     HEADER
      ========================= */
 
   .topbar {
     position: absolute !important;
     z-index: 10 !important;
 
-    top: 11px !important;
+    top: 12px !important;
     left: 16px !important;
     right: 16px !important;
 
     width: auto !important;
     padding: 0 !important;
-    background: transparent !important;
+    margin: 0 !important;
 
     display: flex !important;
     flex-direction: row !important;
     align-items: flex-start !important;
     justify-content: space-between !important;
     gap: 10px !important;
+
+    background: transparent !important;
   }
 
   .brand-group {
@@ -729,12 +744,14 @@ a {
   .brand-line {
     width: 1px !important;
     height: 22px !important;
+    display: block !important;
     background: rgba(255, 255, 255, .9) !important;
   }
 
   .brand-copy {
     margin: 0 !important;
     color: #ffffff !important;
+
     font-size: 7px !important;
     line-height: 1.05 !important;
     font-weight: 400 !important;
@@ -742,14 +759,15 @@ a {
   }
 
   .nav-links {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: flex-end !important;
-    gap: 18px !important;
-
     width: auto !important;
     margin: 0 !important;
     padding: 2px 0 0 !important;
+
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+    gap: 18px !important;
 
     color: #ffffff !important;
     font-size: 10px !important;
@@ -771,12 +789,14 @@ a {
     position: absolute !important;
     z-index: 9 !important;
 
-    top: 64px !important;
+    top: 68px !important;
     left: 16px !important;
     right: auto !important;
 
-    width: 168px !important;
+    width: 176px !important;
     padding: 0 !important;
+    margin: 0 !important;
+
     background: transparent !important;
   }
 
@@ -788,7 +808,7 @@ a {
     align-items: flex-start !important;
 
     font-weight: 900 !important;
-    line-height: .72 !important;
+    line-height: .78 !important;
     letter-spacing: 0 !important;
   }
 
@@ -799,8 +819,8 @@ a {
   .h-orange,
   .h-magenta,
   .h-turquoise {
-    font-size: 24px !important;
-    line-height: .72 !important;
+    font-size: 29px !important;
+    line-height: .78 !important;
   }
 
   .h-orange {
@@ -817,29 +837,31 @@ a {
 
   .h-cream {
     color: var(--cream) !important;
-    font-size: 14.5px !important;
-    line-height: .84 !important;
-    letter-spacing: 1px !important;
-    margin-top: 4px !important;
+
+    font-size: 17px !important;
+    line-height: .88 !important;
+    letter-spacing: 1.2px !important;
+    margin-top: 3px !important;
     font-weight: 400 !important;
   }
 
   .h-yellow {
     color: var(--yellow) !important;
-    font-size: 18.5px !important;
-    line-height: .82 !important;
-    font-weight: 900 !important;
+
+    font-size: 22px !important;
+    line-height: .84 !important;
     margin-top: 0 !important;
+    font-weight: 900 !important;
   }
 
   .hero-actions {
     display: flex !important;
     flex-direction: column !important;
     align-items: flex-start !important;
-    gap: 7px !important;
+    gap: 8px !important;
 
     width: 100% !important;
-    margin-top: 13px !important;
+    margin-top: 20px !important;
   }
 
   .cta {
@@ -860,13 +882,13 @@ a {
   }
 
   .cta-download {
-    width: 154px !important;
-    height: 29px !important;
+    width: 162px !important;
+    height: 31px !important;
 
-    padding: 0 7px 0 5px !important;
+    padding: 0 8px 0 5px !important;
     gap: 4px !important;
 
-    font-size: 11.5px !important;
+    font-size: 12.5px !important;
     font-weight: 400 !important;
 
     background: linear-gradient(
@@ -879,10 +901,10 @@ a {
   }
 
   .cta-download > img {
-    width: 23px !important;
-    height: 23px !important;
-    min-width: 23px !important;
-    flex: 0 0 23px !important;
+    width: 25px !important;
+    height: 25px !important;
+    min-width: 25px !important;
+    flex: 0 0 25px !important;
 
     max-width: none !important;
     object-fit: contain !important;
@@ -891,7 +913,7 @@ a {
   }
 
   .cta-outline {
-    width: 82px !important;
+    width: 84px !important;
     height: 21px !important;
 
     padding: 0 5px !important;
@@ -1121,16 +1143,22 @@ a {
   .footer {
     position: relative !important;
     width: 100% !important;
+    height: 126px !important;
     background: var(--graphite) !important;
     overflow: hidden !important;
   }
 
   .footer-img {
+    position: absolute !important;
+    inset: 0 !important;
+
     display: block !important;
     width: 100% !important;
-    height: auto !important;
-    max-width: 100% !important;
-    object-fit: contain !important;
+    height: 100% !important;
+    max-width: none !important;
+
+    object-fit: cover !important;
+    object-position: center center !important;
     transform: none !important;
   }
 
@@ -1175,6 +1203,10 @@ a {
     font-weight: 400 !important;
     min-width: 0 !important;
     letter-spacing: .05px !important;
+  }
+
+  .footer-brand strong {
+    font-weight: 900 !important;
   }
 
   .store-badges {
