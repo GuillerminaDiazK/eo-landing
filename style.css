@@ -811,19 +811,610 @@ a { text-decoration: none; color: inherit; }
 /* =========================
    RESPONSIVE MOBILE
    ========================= */
+/* =========================================================
+   RESPONSIVE MOBILE EO — LIMPIO DESDE CERO
+   Mobile hasta 700px
+   ========================================================= */
+
 @media (max-width: 700px) {
+
+  /* =========================
+     HERO / HEADER
+     ========================= */
+
+  .hero {
+    position: relative !important;
+    width: 100% !important;
+    min-height: auto !important;
+    height: auto !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+
+    background: #080b0d !important;
+    overflow: visible !important;
+  }
+
+  /* Header negro arriba */
+  .topbar {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+
+    width: 100% !important;
+    height: auto !important;
+
+    padding: 22px 22px 18px !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+    gap: 16px !important;
+
+    background: #080b0d !important;
+    z-index: 20 !important;
+  }
+
+  .brand-group {
+    display: flex !important;
+    align-items: center !important;
+    gap: 12px !important;
+  }
+
+  .brand-logo {
+    width: 82px !important;
+    height: auto !important;
+  }
+
+  .brand-line {
+    width: 1.5px !important;
+    height: 38px !important;
+    background: rgba(255, 255, 255, .9) !important;
+  }
+
+  .brand-copy {
+    margin: 0 !important;
+    color: #ffffff !important;
+
+    font-size: 16px !important;
+    line-height: 1.05 !important;
+    font-weight: 400 !important;
+    letter-spacing: .1px !important;
+  }
+
+  .brand-copy strong {
+    font-weight: 900 !important;
+  }
+
+  .nav-links {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    gap: 26px !important;
+
+    color: #ffffff !important;
+    font-size: 14px !important;
+    line-height: 1 !important;
+    font-weight: 400 !important;
+  }
+
+  .nav-links a {
+    color: #ffffff !important;
+    white-space: nowrap !important;
+  }
+
+  /* Foto completa debajo del header */
+  .hero-img {
+    position: relative !important;
+    display: block !important;
+
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100% !important;
+
+    transform: none !important;
+    object-fit: contain !important;
+  }
+
+  .hero-shade {
+    display: none !important;
+  }
+
+  /* Título y botones debajo de la foto */
+  .hero-message {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+
+    width: 100% !important;
+    padding: 30px 22px 42px !important;
+
+    display: block !important;
+
+    background: #080b0d !important;
+    z-index: 5 !important;
+  }
+
+  .hero-message h1 {
+    margin: 0 !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+
+    line-height: .80 !important;
+    letter-spacing: .2px !important;
+  }
+
+  .h-orange,
+  .h-magenta,
+  .h-turquoise {
+    display: block !important;
+    font-size: clamp(44px, 13.8vw, 62px) !important;
+    line-height: .80 !important;
+  }
+
+  .h-cream {
+    display: block !important;
+
+    color: var(--cream) !important;
+    font-size: clamp(22px, 7vw, 31px) !important;
+    line-height: .92 !important;
+    letter-spacing: 2px !important;
+    margin-top: 4px !important;
+    font-weight: 400 !important;
+  }
+
+  .h-yellow {
+    display: block !important;
+
+    color: var(--yellow) !important;
+    font-size: clamp(30px, 9.2vw, 43px) !important;
+    line-height: .88 !important;
+    margin-top: 0 !important;
+  }
+
+  /* =========================
+     BOTONES CTA HERO
+     ========================= */
+
+  .hero-actions {
+    width: 100% !important;
+    margin-top: 28px !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 12px !important;
+  }
+
+  .cta {
+    height: 56px !important;
+    border-radius: 8px !important;
+
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    font-family: "AmsiPro", Arial, sans-serif !important;
+    font-weight: 400 !important;
+    line-height: 1 !important;
+
+    white-space: nowrap !important;
+    overflow: hidden !important;
+  }
+
+  .cta-download {
+    width: 342px !important;
+    max-width: calc(100vw - 44px) !important;
+
+    padding: 0 22px 0 16px !important;
+    gap: 8px !important;
+
+    font-size: 18px !important;
+    font-weight: 400 !important;
+
+    background: linear-gradient(
+      90deg,
+      #c91f43 0%,
+      #a51b96 38%,
+      #009d9c 70%,
+      #f0c641 100%
+    ) !important;
+  }
+
   .cta-download > img {
-    width: 50px !important;
-    height: 50px !important;
-    min-width: 50px !important;
-    flex: 0 0 50px !important;
+    width: 44px !important;
+    height: 44px !important;
+    min-width: 44px !important;
+    flex: 0 0 44px !important;
+
     max-width: none !important;
     object-fit: contain !important;
     transform: scale(1.08) !important;
     transform-origin: center !important;
   }
 
+  .cta-outline {
+    width: 248px !important;
+    max-width: calc(100vw - 44px) !important;
+
+    padding: 0 15px !important;
+    gap: 3px !important;
+
+    font-size: 16px !important;
+    font-weight: 400 !important;
+
+    color: var(--cream) !important;
+    background: rgba(29, 33, 38, .14) !important;
+    border: 1.4px solid rgba(255, 255, 255, .82) !important;
+  }
+
+  .cta-outline > img {
+    width: 38px !important;
+    height: 38px !important;
+    min-width: 38px !important;
+    flex: 0 0 38px !important;
+
+    max-width: none !important;
+    object-fit: contain !important;
+    transform: scale(1.06) !important;
+    transform-origin: center !important;
+  }
+
+  .cta span {
+    display: inline-block !important;
+    white-space: nowrap !important;
+    transform: translateY(1px) !important;
+  }
+
+  /* =========================
+     CONTENEDORES
+     ========================= */
+
+  .wrap,
+  .faq-wrap {
+    width: calc(100% - 40px) !important;
+    max-width: 430px !important;
+    margin: 0 auto !important;
+  }
+
+  /* =========================
+     BENEFICIOS
+     ========================= */
+
+  .benefits {
+    padding: 56px 0 0 !important;
+    background: var(--cream) !important;
+  }
+
+  .benefits h2 {
+    margin: 0 0 92px !important;
+
+    text-align: center !important;
+    font-size: 27px !important;
+    line-height: 1.14 !important;
+    letter-spacing: .8px !important;
+  }
+
+  .feature-grid {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 88px !important;
+  }
+
+  .feature {
+    position: relative !important;
+
+    min-height: auto !important;
+    height: auto !important;
+
+    padding: 92px 26px 38px !important;
+    border-radius: 24px !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+
+    text-align: center !important;
+  }
+
+  .feature-icon {
+    width: 112px !important;
+    height: 112px !important;
+    top: -56px !important;
+  }
+
+  .feature-icon img {
+    width: 96px !important;
+    height: 96px !important;
+    max-width: none !important;
+
+    object-fit: contain !important;
+    transform: scale(1.08) !important;
+    transform-origin: center !important;
+  }
+
+  .feature h3 {
+    margin: 0 0 24px !important;
+
+    font-size: 31px !important;
+    line-height: 1 !important;
+    font-weight: 900 !important;
+  }
+
+  .feature p {
+    max-width: 320px !important;
+    margin: 0 auto !important;
+
+    font-size: 20px !important;
+    line-height: 1.22 !important;
+    font-weight: 400 !important;
+    letter-spacing: .1px !important;
+  }
+
+  .feature-green h3 {
+    font-size: 29px !important;
+    line-height: 1.05 !important;
+  }
+
+  .feature-green p {
+    max-width: 320px !important;
+    font-size: 19px !important;
+    line-height: 1.22 !important;
+  }
+
+  /* =========================
+     CHECKS
+     ========================= */
+
+  .check-row {
+    margin: 58px auto 0 !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 16px !important;
+
+    max-width: 100% !important;
+  }
+
+  .check-item {
+    display: flex !important;
+    align-items: center !important;
+    gap: 9px !important;
+
+    font-size: 16px !important;
+    line-height: 1.1 !important;
+    font-weight: 600 !important;
+    white-space: nowrap !important;
+  }
+
+  .check-item span {
+    width: 27px !important;
+    height: 27px !important;
+    flex: 0 0 27px !important;
+
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    font-size: 18px !important;
+    line-height: 1 !important;
+  }
+
+  /* =========================
+     FAQ
+     ========================= */
+
+  .faq {
+    padding: 66px 0 78px !important;
+    background: var(--cream) !important;
+  }
+
+  .faq h2 {
+    margin-bottom: 28px !important;
+
+    font-size: 20px !important;
+    line-height: 1 !important;
+  }
+
+  .faq-grid {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    column-gap: 0 !important;
+    row-gap: 0 !important;
+  }
+
+  .faq article {
+    margin-bottom: 30px !important;
+  }
+
+  .faq h3 {
+    font-size: 16px !important;
+    line-height: 1.25 !important;
+  }
+
+  .faq p {
+    font-size: 15.5px !important;
+    line-height: 1.32 !important;
+  }
+
+  /* =========================
+     FOOTER
+     ========================= */
+
+  .footer {
+    position: relative !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+
+    min-height: auto !important;
+    height: auto !important;
+
+    background: var(--graphite) !important;
+    overflow: visible !important;
+  }
+
+  .footer-img {
+    position: relative !important;
+    display: block !important;
+
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100% !important;
+
+    transform: none !important;
+    object-fit: contain !important;
+  }
+
+  .footer-content {
+    position: relative !important;
+    inset: auto !important;
+    z-index: 5 !important;
+
+    width: 100% !important;
+    padding: 24px 22px 28px !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+    gap: 22px !important;
+
+    background: var(--graphite) !important;
+  }
+
+  .footer-brand {
+    display: flex !important;
+    align-items: center !important;
+    gap: 12px !important;
+  }
+
+  .footer-brand img {
+    width: 82px !important;
+    height: auto !important;
+  }
+
+  .footer-brand span {
+    width: 1.5px !important;
+    height: 38px !important;
+    background: rgba(255,255,255,.9) !important;
+  }
+
+  .footer-brand p {
+    margin: 0 !important;
+
+    color: #ffffff !important;
+    font-size: 16px !important;
+    line-height: 1.08 !important;
+    font-weight: 400 !important;
+    min-width: 0 !important;
+  }
+
+  .footer-brand strong {
+    font-weight: 900 !important;
+  }
+
+  .store-badges {
+    position: relative !important;
+    left: auto !important;
+    bottom: auto !important;
+
+    margin-left: 0 !important;
+
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+    flex-wrap: wrap !important;
+  }
+
+  .store-badges img {
+    height: 42px !important;
+    width: auto !important;
+    max-width: none !important;
+  }
+}
+
+/* =========================================================
+   AJUSTE MOBILE MUY CHICO
+   ========================================================= */
+
+@media (max-width: 390px) {
+
+  .topbar {
+    padding: 20px 18px 16px !important;
+  }
+
+  .brand-logo {
+    width: 76px !important;
+  }
+
+  .brand-copy {
+    font-size: 14.5px !important;
+  }
+
+  .nav-links {
+    gap: 18px !important;
+    font-size: 12.5px !important;
+  }
+
+  .hero-message {
+    padding: 28px 18px 38px !important;
+  }
+
+  .h-orange,
+  .h-magenta,
+  .h-turquoise {
+    font-size: 41px !important;
+  }
+
+  .h-cream {
+    font-size: 21px !important;
+    letter-spacing: 1.6px !important;
+  }
+
+  .h-yellow {
+    font-size: 29px !important;
+  }
+
   .cta-download {
-    gap: 4px !important;
+    width: 320px !important;
+    max-width: calc(100vw - 36px) !important;
+    font-size: 16px !important;
+  }
+
+  .cta-download > img {
+    width: 42px !important;
+    height: 42px !important;
+    min-width: 42px !important;
+    flex: 0 0 42px !important;
+  }
+
+  .cta-outline {
+    width: 230px !important;
+    max-width: calc(100vw - 36px) !important;
+    font-size: 15px !important;
+  }
+
+  .cta-outline > img {
+    width: 36px !important;
+    height: 36px !important;
+    min-width: 36px !important;
+    flex: 0 0 36px !important;
+  }
+
+  .wrap,
+  .faq-wrap {
+    width: calc(100% - 36px) !important;
   }
 }
