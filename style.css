@@ -815,8 +815,8 @@ a { text-decoration: none; color: inherit; }
 @media (max-width: 700px) {
 
   /* =========================
-     HERO MOBILE LIMPIO
-     Header separado + foto completa
+     HERO MOBILE ORDENADO
+     Header + foto completa + título/botones debajo
      ========================= */
 
   .hero {
@@ -828,7 +828,7 @@ a { text-decoration: none; color: inherit; }
     flex-direction: column;
   }
 
-  /* Header separado, arriba de la foto */
+  /* Header separado arriba */
   .topbar {
     position: relative;
     z-index: 10;
@@ -838,7 +838,6 @@ a { text-decoration: none; color: inherit; }
     right: auto;
 
     width: 100%;
-    height: auto;
     padding: 24px 24px 20px;
 
     display: flex;
@@ -870,7 +869,6 @@ a { text-decoration: none; color: inherit; }
   .brand-copy {
     margin: 0;
     color: var(--white);
-
     font-size: 18px;
     line-height: 1.05;
     letter-spacing: .15px;
@@ -899,7 +897,7 @@ a { text-decoration: none; color: inherit; }
     letter-spacing: .2px;
   }
 
-  /* Foto completa, sin recortar ni estirar */
+  /* Foto completa, sin recorte */
   .hero-img {
     position: relative;
     width: 100%;
@@ -910,15 +908,119 @@ a { text-decoration: none; color: inherit; }
     object-fit: contain;
   }
 
-  /* Quitamos overlay para que no tape información */
+  /* Sin overlay encima de la foto en mobile */
   .hero-shade {
     display: none;
   }
 
-  /* En mobile ocultamos título y botones del hero */
-  .hero-message,
+  /* El título baja debajo de la foto */
+  .hero-message {
+    position: relative;
+    z-index: 5;
+
+    left: auto;
+    top: auto;
+
+    width: 100%;
+    padding: 34px 24px 36px;
+
+    background: #080b0d;
+  }
+
+  .hero-message h1 {
+    margin: 0;
+    line-height: .82;
+  }
+
+  .h-orange,
+  .h-magenta,
+  .h-turquoise {
+    font-size: clamp(48px, 15vw, 72px);
+  }
+
+  .h-cream {
+    font-size: clamp(25px, 7.8vw, 36px);
+    line-height: .92;
+    letter-spacing: 2.5px;
+    margin-top: 4px;
+    font-weight: 400;
+  }
+
+  .h-yellow {
+    font-size: clamp(34px, 10vw, 48px);
+    line-height: .88;
+  }
+
+  /* Botones debajo del título */
   .hero-actions {
-    display: none;
+    display: flex;
+    width: 100%;
+    margin-top: 30px;
+
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .cta {
+    height: 54px;
+    border-radius: 8px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "AmsiPro", Arial, sans-serif;
+    line-height: 1;
+    font-weight: 400;
+
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .cta-download {
+    width: 100%;
+    max-width: 335px;
+    padding: 0 22px 0 18px;
+    gap: 9px;
+    font-size: 18px;
+  }
+
+  .cta-outline {
+    width: 100%;
+    max-width: 245px;
+    padding: 0 15px;
+    gap: 4px;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .cta-download > img {
+    width: 38px !important;
+    height: 38px !important;
+    min-width: 38px !important;
+    flex: 0 0 38px !important;
+    max-width: none !important;
+    object-fit: contain;
+    transform: scale(1.12);
+    transform-origin: center;
+  }
+
+  .cta-outline > img {
+    width: 36px !important;
+    height: 36px !important;
+    min-width: 36px !important;
+    flex: 0 0 36px !important;
+    max-width: none !important;
+    object-fit: contain;
+    transform: scale(1.10);
+    transform-origin: center;
+  }
+
+  .cta span {
+    display: inline-block;
+    white-space: nowrap;
+    transform: translateY(1px);
   }
 
 
@@ -1091,7 +1193,7 @@ a { text-decoration: none; color: inherit; }
 
 
   /* =========================
-     FOOTER MOBILE LIMPIO
+     FOOTER MOBILE
      Foto completa + info debajo
      ========================= */
 
@@ -1105,7 +1207,6 @@ a { text-decoration: none; color: inherit; }
     flex-direction: column;
   }
 
-  /* Foto completa, sin recortar ni estirar */
   .footer-img {
     position: relative;
     width: 100%;
@@ -1116,7 +1217,6 @@ a { text-decoration: none; color: inherit; }
     object-fit: contain;
   }
 
-  /* En mobile el contenido baja debajo de la foto */
   .footer-content {
     position: relative;
     inset: auto;
