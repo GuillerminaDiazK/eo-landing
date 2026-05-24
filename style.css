@@ -816,48 +816,50 @@ a { text-decoration: none; color: inherit; }
 
   /* HERO */
   .hero {
-    min-height: 690px;
+    min-height: 760px;
+    background: #080b0d;
   }
 
   .hero-img {
     width: auto;
-    height: 690px;
+    height: 760px;
     max-width: none;
-    transform: translateX(-36%);
+    transform: translateX(-38%);
   }
 
   .hero-shade {
     background:
-      linear-gradient(90deg, rgba(6,8,10,.90) 0%, rgba(6,8,10,.74) 45%, rgba(6,8,10,.22) 100%),
-      linear-gradient(180deg, rgba(6,8,10,.50) 0%, rgba(6,8,10,.16) 48%, rgba(6,8,10,.66) 100%);
+      linear-gradient(90deg, rgba(6, 8, 10, .92) 0%, rgba(6, 8, 10, .82) 48%, rgba(6, 8, 10, .45) 100%),
+      linear-gradient(180deg, rgba(6, 8, 10, .62) 0%, rgba(6, 8, 10, .22) 45%, rgba(6, 8, 10, .72) 100%);
   }
 
   .topbar {
-    top: 24px;
-    left: 24px;
-    right: 24px;
+    top: 22px;
+    left: 22px;
+    right: 22px;
     flex-direction: column;
     align-items: flex-start;
-    gap: 18px;
+    gap: 16px;
   }
 
   .brand-group {
-    gap: 14px;
+    gap: 12px;
   }
 
   .brand-logo {
-  width: 76px;
-}
+    width: 72px;
+  }
 
-.brand-line {
-  height: 36px;
-}
+  .brand-line {
+    width: 1.5px;
+    height: 34px;
+  }
 
-.brand-copy {
-  font-size: 14.5px;
+  .brand-copy {
+    font-size: 14px;
     line-height: 1.05;
+    letter-spacing: .1px;
     font-weight: 400;
-    letter-spacing: .15px;
   }
 
   .brand-copy strong {
@@ -866,41 +868,40 @@ a { text-decoration: none; color: inherit; }
 
   .nav-links {
     width: 100%;
-    justify-content: space-between;
-    gap: 16px;
+    justify-content: flex-start;
+    gap: 24px;
+    font-size: 12px;
     padding-top: 0;
-    font-size: 13px;
-    line-height: 1;
+    margin-right: 0;
   }
 
   .hero-message {
-    left: 24px;
-    top: 142px;
-    width: calc(100% - 48px);
+    left: 22px;
+    top: 138px;
+    width: calc(100% - 44px);
   }
 
   .hero-message h1 {
-    line-height: .80;
+    line-height: .82;
   }
 
   .h-orange,
   .h-magenta,
   .h-turquoise {
-    font-size: clamp(48px, 15vw, 66px);
+    font-size: clamp(44px, 14vw, 60px);
   }
 
   .h-cream {
-    font-size: clamp(25px, 8vw, 34px);
+    font-size: clamp(23px, 7vw, 31px);
     line-height: .92;
-    letter-spacing: 3px;
+    letter-spacing: 2.5px;
     margin-top: 2px;
     font-weight: 400;
   }
 
   .h-yellow {
-    font-size: clamp(33px, 10vw, 44px);
+    font-size: clamp(30px, 9vw, 40px);
     line-height: .86;
-    margin-top: 0;
   }
 
   /* BOTONES HERO */
@@ -913,63 +914,64 @@ a { text-decoration: none; color: inherit; }
   }
 
   .cta {
-    height: 54px;
+    height: 52px;
     border-radius: 8px;
-    font-size: 18px;
   }
 
   .cta-download {
     width: 100%;
-    max-width: 335px;
-    padding: 0 22px 0 18px;
-    gap: 10px;
+    max-width: 318px;
+    padding: 0 18px;
+    gap: 8px;
+    font-size: 17px;
   }
 
   .cta-outline {
     width: 100%;
-    max-width: 250px;
-    padding: 0 16px;
-    gap: 4px;
-    font-size: 17px;
+    max-width: 225px;
+    padding: 0 14px;
+    gap: 3px;
+    font-size: 15.5px;
     font-weight: 400;
   }
 
   .cta-download > img {
-    width: 32px !important;
-    height: 32px !important;
-    min-width: 32px !important;
-    flex: 0 0 32px !important;
+    width: 31px !important;
+    height: 31px !important;
+    min-width: 31px !important;
+    flex: 0 0 31px !important;
     transform: scale(1.25);
   }
 
   .cta-outline > img {
-    width: 32px !important;
-    height: 32px !important;
-    min-width: 32px !important;
-    flex: 0 0 32px !important;
-    transform: scale(1.22);
+    width: 31px !important;
+    height: 31px !important;
+    min-width: 31px !important;
+    flex: 0 0 31px !important;
+    transform: scale(1.18);
   }
 
   .cta span {
     white-space: nowrap;
   }
 
-  /* BENEFITS */
+  /* CONTENEDORES */
   .wrap,
   .faq-wrap {
-    width: calc(100% - 40px);
+    width: calc(100% - 36px);
     max-width: 420px;
   }
 
+  /* BENEFICIOS */
   .benefits {
-    padding: 48px 0 0;
+    padding: 46px 0 0;
   }
 
   .benefits h2 {
-    font-size: 28px;
-    line-height: 1.1;
-    letter-spacing: 1px;
-    margin-bottom: 88px;
+    font-size: 25px;
+    line-height: 1.12;
+    letter-spacing: .8px;
+    margin-bottom: 86px;
   }
 
   .feature-grid {
@@ -979,8 +981,7 @@ a { text-decoration: none; color: inherit; }
 
   .feature {
     min-height: auto;
-    height: auto;
-    padding: 82px 26px 32px;
+    padding: 82px 24px 32px;
   }
 
   .feature-icon {
@@ -989,9 +990,9 @@ a { text-decoration: none; color: inherit; }
     top: -51px;
   }
 
-   .feature-icon img {
-    width: 90px;
-    height: 90px;
+  .feature-icon img {
+    width: 96px;
+    height: 96px;
     max-width: none;
     object-fit: contain;
     transform: scale(1.08);
@@ -999,77 +1000,60 @@ a { text-decoration: none; color: inherit; }
   }
 
   .feature h3 {
-    font-size: 30px;
-    margin-bottom: 22px;
+    font-size: 28px;
+    margin-bottom: 20px;
   }
 
   .feature p {
     max-width: 285px;
-    font-size: 19px;
+    font-size: 18px;
     line-height: 1.18;
   }
 
   .feature-green h3 {
-    font-size: 28px;
+    font-size: 26px;
     line-height: 1.05;
-    margin-bottom: 22px;
   }
 
   .feature-green p {
     max-width: 285px;
-    font-size: 19px;
-    line-height: 1.16;
+    font-size: 17.5px;
   }
 
-  /* CHECKLIST */
+  /* CHECKS */
   .check-row {
-    margin-top: 50px;
+    margin-top: 54px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 14px;
     max-width: 100%;
-    flex-wrap: nowrap;
   }
 
   .check-item {
     display: flex;
     align-items: center;
     gap: 7px;
-
     font-size: 15px;
     line-height: 1;
     font-weight: 600;
-    letter-spacing: .05px;
-
     white-space: nowrap;
   }
 
   .check-item span {
-    flex: 0 0 26px;
-    width: 26px;
-    height: 26px;
-
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-
-    border-radius: 50%;
-    background: var(--magenta);
-    color: var(--white);
-
-    font-size: 18px;
-    font-weight: 900;
-    line-height: 1;
+    width: 25px;
+    height: 25px;
+    flex: 0 0 25px;
+    font-size: 17px;
   }
 
   /* FAQ */
   .faq {
-    padding: 64px 0 78px;
+    padding: 62px 0 76px;
   }
 
   .faq h2 {
-    font-size: 20px;
+    font-size: 19px;
     margin-bottom: 26px;
   }
 
@@ -1094,37 +1078,42 @@ a { text-decoration: none; color: inherit; }
 
   /* FOOTER */
   .footer {
-    min-height: 280px;
+    min-height: 270px;
   }
 
   .footer-img {
     width: auto;
-    height: 280px;
+    height: 270px;
     max-width: none;
-    transform: translateX(-34%);
+    transform: translateX(-36%);
   }
 
   .footer-content {
-    inset: 0;
-    padding: 32px 24px;
+    padding: 30px 22px;
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    gap: 24px;
+    gap: 22px;
   }
 
- .footer-brand img {
-  width: 76px;
-}
+  .footer-brand {
+    gap: 10px;
+  }
 
-.footer-brand span {
-  height: 36px;
-}
+  .footer-brand img {
+    width: 64px;
+  }
 
-.footer-brand p {
-  font-size: 14.5px;
-  min-width: 0;
-}
+  .footer-brand span {
+    width: 1.5px;
+    height: 31px;
+  }
+
+  .footer-brand p {
+    font-size: 13.5px;
+    line-height: 1.05;
+    min-width: 0;
+  }
 
   .store-badges {
     margin-left: 0;
@@ -1133,6 +1122,6 @@ a { text-decoration: none; color: inherit; }
   }
 
   .store-badges img {
-    height: 40px;
+    height: 36px;
   }
 }
