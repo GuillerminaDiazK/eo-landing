@@ -814,32 +814,51 @@ a { text-decoration: none; color: inherit; }
 
 @media (max-width: 700px) {
 
-  /* HERO */
-  .hero {
-  min-height: auto;
-  background: #080b0d;
-}
+  /* =========================
+     HERO MOBILE
+     ========================= */
 
-.hero-img {
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  transform: none;
-}
+  .hero {
+    position: relative;
+    min-height: auto;
+    background: #080b0d;
+    overflow: hidden;
+  }
+
+  .hero-img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+    transform: none;
+  }
 
   .hero-shade {
+    position: absolute;
+    inset: 0;
     background:
-      linear-gradient(90deg, rgba(6, 8, 10, .92) 0%, rgba(6, 8, 10, .82) 48%, rgba(6, 8, 10, .45) 100%),
-      linear-gradient(180deg, rgba(6, 8, 10, .62) 0%, rgba(6, 8, 10, .22) 45%, rgba(6, 8, 10, .72) 100%);
+      linear-gradient(
+        90deg,
+        rgba(6, 8, 10, .92) 0%,
+        rgba(6, 8, 10, .78) 45%,
+        rgba(6, 8, 10, .35) 100%
+      ),
+      linear-gradient(
+        180deg,
+        rgba(6, 8, 10, .55) 0%,
+        rgba(6, 8, 10, .18) 45%,
+        rgba(6, 8, 10, .65) 100%
+      );
   }
 
   .topbar {
     top: 22px;
     left: 22px;
     right: 22px;
+
     flex-direction: column;
     align-items: flex-start;
-    gap: 16px;
+    gap: 14px;
   }
 
   .brand-group {
@@ -848,6 +867,7 @@ a { text-decoration: none; color: inherit; }
 
   .brand-logo {
     width: 72px;
+    height: auto;
   }
 
   .brand-line {
@@ -870,103 +890,139 @@ a { text-decoration: none; color: inherit; }
     width: 100%;
     justify-content: flex-start;
     gap: 24px;
-    font-size: 12px;
+
     padding-top: 0;
     margin-right: 0;
+
+    font-size: 12px;
+    line-height: 1;
   }
 
   .hero-message {
     left: 22px;
-    top: 138px;
+    top: 132px;
     width: calc(100% - 44px);
   }
 
   .hero-message h1 {
-    line-height: .82;
+    line-height: .80;
   }
 
   .h-orange,
   .h-magenta,
   .h-turquoise {
-    font-size: clamp(44px, 14vw, 60px);
+    font-size: clamp(39px, 12vw, 56px);
   }
 
   .h-cream {
-    font-size: clamp(23px, 7vw, 31px);
-    line-height: .92;
-    letter-spacing: 2.5px;
+    font-size: clamp(20px, 6.5vw, 29px);
+    line-height: .9;
+    letter-spacing: 2.2px;
     margin-top: 2px;
     font-weight: 400;
   }
 
   .h-yellow {
-    font-size: clamp(30px, 9vw, 40px);
+    font-size: clamp(27px, 8.5vw, 38px);
     line-height: .86;
   }
 
-  /* BOTONES HERO */
+
+  /* =========================
+     BOTONES HERO MOBILE
+     ========================= */
+
   .hero-actions {
     width: 100%;
-    margin-top: 34px;
+    margin-top: 30px;
+
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 12px;
+    gap: 11px;
   }
 
   .cta {
     height: 52px;
     border-radius: 8px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "AmsiPro", Arial, sans-serif;
+    line-height: 1;
+    font-weight: 400;
+
+    white-space: nowrap;
+    overflow: hidden;
   }
 
   .cta-download {
     width: 100%;
-    max-width: 318px;
-    padding: 0 18px;
-    gap: 8px;
+    max-width: 325px;
+    padding: 0 20px 0 18px;
+    gap: 9px;
+
     font-size: 17px;
   }
 
   .cta-outline {
     width: 100%;
-    max-width: 225px;
-    padding: 0 14px;
-    gap: 3px;
+    max-width: 235px;
+    padding: 0 15px;
+    gap: 4px;
+
     font-size: 15.5px;
     font-weight: 400;
   }
 
- .cta-download > img {
-  width: 38px !important;
-  height: 38px !important;
-  min-width: 38px !important;
-  flex: 0 0 38px !important;
-  object-fit: contain;
-  transform: scale(1.15);
-  transform-origin: center;
-}
+  .cta-download > img {
+    width: 38px !important;
+    height: 38px !important;
+    min-width: 38px !important;
+    flex: 0 0 38px !important;
 
-.cta-outline > img {
-  width: 36px !important;
-  height: 36px !important;
-  min-width: 36px !important;
-  flex: 0 0 36px !important;
-  object-fit: contain;
-  transform: scale(1.12);
-  transform-origin: center;
-}
-
-  .cta span {
-    white-space: nowrap;
+    max-width: none !important;
+    object-fit: contain;
+    transform: scale(1.12);
+    transform-origin: center;
   }
 
-  /* CONTENEDORES */
+  .cta-outline > img {
+    width: 36px !important;
+    height: 36px !important;
+    min-width: 36px !important;
+    flex: 0 0 36px !important;
+
+    max-width: none !important;
+    object-fit: contain;
+    transform: scale(1.10);
+    transform-origin: center;
+  }
+
+  .cta span {
+    display: inline-block;
+    white-space: nowrap;
+    transform: translateY(1px);
+  }
+
+
+  /* =========================
+     CONTENEDORES MOBILE
+     ========================= */
+
   .wrap,
   .faq-wrap {
     width: calc(100% - 36px);
     max-width: 420px;
   }
 
-  /* BENEFICIOS */
+
+  /* =========================
+     BENEFICIOS MOBILE
+     ========================= */
+
   .benefits {
     padding: 46px 0 0;
   }
@@ -985,6 +1041,7 @@ a { text-decoration: none; color: inherit; }
 
   .feature {
     min-height: auto;
+    height: auto;
     padding: 82px 24px 32px;
   }
 
@@ -1024,13 +1081,19 @@ a { text-decoration: none; color: inherit; }
     font-size: 17.5px;
   }
 
-  /* CHECKS */
+
+  /* =========================
+     CHECKS MOBILE
+     ========================= */
+
   .check-row {
     margin-top: 54px;
+
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 14px;
+
     max-width: 100%;
   }
 
@@ -1038,6 +1101,7 @@ a { text-decoration: none; color: inherit; }
     display: flex;
     align-items: center;
     gap: 7px;
+
     font-size: 15px;
     line-height: 1;
     font-weight: 600;
@@ -1048,10 +1112,19 @@ a { text-decoration: none; color: inherit; }
     width: 25px;
     height: 25px;
     flex: 0 0 25px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
     font-size: 17px;
   }
 
-  /* FAQ */
+
+  /* =========================
+     FAQ MOBILE
+     ========================= */
+
   .faq {
     padding: 62px 0 76px;
   }
@@ -1080,24 +1153,33 @@ a { text-decoration: none; color: inherit; }
     line-height: 1.28;
   }
 
-  /* FOOTER */
- .footer {
-  min-height: auto;
-}
 
-.footer-img {
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  transform: none;
-}
+  /* =========================
+     FOOTER MOBILE
+     ========================= */
+
+  .footer {
+    position: relative;
+    min-height: auto;
+    background: var(--graphite);
+    overflow: hidden;
+  }
+
+  .footer-img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+    transform: none;
+  }
 
   .footer-content {
-    padding: 30px 22px;
+    padding: 26px 22px;
+
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    gap: 22px;
+    gap: 20px;
   }
 
   .footer-brand {
@@ -1106,6 +1188,7 @@ a { text-decoration: none; color: inherit; }
 
   .footer-brand img {
     width: 64px;
+    height: auto;
   }
 
   .footer-brand span {
@@ -1127,5 +1210,6 @@ a { text-decoration: none; color: inherit; }
 
   .store-badges img {
     height: 36px;
+    width: auto;
   }
 }
