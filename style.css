@@ -642,9 +642,8 @@ a {
    RESPONSIVE MOBILE EO — NUEVO DESDE CERO
    SOLO MOBILE HASTA 700PX
    ========================================================= */
-
 /* =========================================================
-   RESPONSIVE MOBILE EO — FINAL SEGÚN REFERENCIA
+   RESPONSIVE MOBILE EO — FINAL 700PX
    ========================================================= */
 
 @media (max-width: 700px) {
@@ -660,9 +659,9 @@ a {
   .hero {
     position: relative !important;
     width: 100% !important;
-    height: clamp(250px, 64.6vw, 300px) !important;
-    min-height: 250px !important;
-    max-height: 300px !important;
+    height: 278px !important;
+    min-height: 278px !important;
+    max-height: 278px !important;
     background: #080b0d !important;
     overflow: hidden !important;
   }
@@ -671,11 +670,11 @@ a {
     position: absolute !important;
     inset: 0 !important;
 
+    display: block !important;
     width: 100% !important;
     height: 100% !important;
     max-width: none !important;
 
-    display: block !important;
     object-fit: cover !important;
     object-position: center center !important;
     transform: none !important;
@@ -685,6 +684,7 @@ a {
     position: absolute !important;
     inset: 0 !important;
     z-index: 1 !important;
+
     display: block !important;
     pointer-events: none !important;
 
@@ -692,20 +692,20 @@ a {
       linear-gradient(
         90deg,
         rgba(6, 8, 10, .92) 0%,
-        rgba(6, 8, 10, .74) 38%,
-        rgba(6, 8, 10, .32) 68%,
+        rgba(6, 8, 10, .78) 34%,
+        rgba(6, 8, 10, .34) 66%,
         rgba(6, 8, 10, .08) 100%
       ),
       linear-gradient(
         180deg,
-        rgba(6, 8, 10, .52) 0%,
-        rgba(6, 8, 10, .10) 48%,
-        rgba(6, 8, 10, .58) 100%
+        rgba(6, 8, 10, .50) 0%,
+        rgba(6, 8, 10, .08) 50%,
+        rgba(6, 8, 10, .55) 100%
       ) !important;
   }
 
   /* =========================
-     HEADER
+     HEADER SOBRE FOTO
      ========================= */
 
   .topbar {
@@ -742,9 +742,9 @@ a {
   }
 
   .brand-line {
+    display: block !important;
     width: 1px !important;
     height: 22px !important;
-    display: block !important;
     background: rgba(255, 255, 255, .9) !important;
   }
 
@@ -782,7 +782,7 @@ a {
   }
 
   /* =========================
-     TITULO + CTAS
+     TITULO + BOTONES
      ========================= */
 
   .hero-message {
@@ -793,10 +793,11 @@ a {
     left: 16px !important;
     right: auto !important;
 
-    width: 176px !important;
+    width: 178px !important;
+    height: 190px !important;
+
     padding: 0 !important;
     margin: 0 !important;
-
     background: transparent !important;
   }
 
@@ -808,7 +809,7 @@ a {
     align-items: flex-start !important;
 
     font-weight: 900 !important;
-    line-height: .78 !important;
+    line-height: .74 !important;
     letter-spacing: 0 !important;
   }
 
@@ -819,8 +820,8 @@ a {
   .h-orange,
   .h-magenta,
   .h-turquoise {
-    font-size: 29px !important;
-    line-height: .78 !important;
+    font-size: 26px !important;
+    line-height: .74 !important;
   }
 
   .h-orange {
@@ -838,9 +839,9 @@ a {
   .h-cream {
     color: var(--cream) !important;
 
-    font-size: 17px !important;
-    line-height: .88 !important;
-    letter-spacing: 1.2px !important;
+    font-size: 15.5px !important;
+    line-height: .84 !important;
+    letter-spacing: 1px !important;
     margin-top: 3px !important;
     font-weight: 400 !important;
   }
@@ -848,20 +849,24 @@ a {
   .h-yellow {
     color: var(--yellow) !important;
 
-    font-size: 22px !important;
-    line-height: .84 !important;
+    font-size: 20px !important;
+    line-height: .82 !important;
     margin-top: 0 !important;
     font-weight: 900 !important;
   }
 
   .hero-actions {
+    position: absolute !important;
+    left: 0 !important;
+    top: 130px !important;
+
     display: flex !important;
     flex-direction: column !important;
     align-items: flex-start !important;
     gap: 8px !important;
 
-    width: 100% !important;
-    margin-top: 20px !important;
+    width: 170px !important;
+    margin: 0 !important;
   }
 
   .cta {
@@ -908,6 +913,7 @@ a {
 
     max-width: none !important;
     object-fit: contain !important;
+
     transform: scale(1.18) !important;
     transform-origin: center !important;
   }
@@ -935,6 +941,7 @@ a {
 
     max-width: none !important;
     object-fit: contain !important;
+
     transform: scale(1.1) !important;
     transform-origin: center !important;
   }
