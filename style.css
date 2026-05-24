@@ -815,93 +815,65 @@ a { text-decoration: none; color: inherit; }
 @media (max-width: 700px) {
 
   /* =========================
-     HERO MOBILE: HEADER SEPARADO + FOTO ENTERA
+     HERO MOBILE LIMPIO
+     Header separado + foto completa
      ========================= */
 
   .hero {
     position: relative;
-    min-height: auto;
     background: #080b0d;
-    overflow: hidden;
-
-    /* espacio para que el header quede arriba de la foto */
-    padding-top: 96px;
+    overflow: visible;
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
   }
 
-  .hero-img {
+  /* Header separado, arriba de la foto */
+  .topbar {
+    position: relative;
+    z-index: 10;
+
+    top: auto;
+    left: auto;
+    right: auto;
+
     width: 100%;
     height: auto;
-    max-width: 100%;
-    display: block;
-    transform: none;
-  }
-
-  /* Overlay solo sobre la zona de la foto, no sobre el header */
-  .hero-shade {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 96px;
-    bottom: 0;
-    background:
-      linear-gradient(
-        90deg,
-        rgba(6, 8, 10, .86) 0%,
-        rgba(6, 8, 10, .58) 48%,
-        rgba(6, 8, 10, .18) 100%
-      ),
-      linear-gradient(
-        180deg,
-        rgba(6, 8, 10, .40) 0%,
-        rgba(6, 8, 10, .08) 46%,
-        rgba(6, 8, 10, .48) 100%
-      );
-    pointer-events: none;
-  }
-
-  /* Header mobile separado arriba de la foto */
-  .topbar {
-    position: absolute;
-    z-index: 10;
-    top: 0;
-    left: 0;
-    right: 0;
-
-    height: 96px;
-    padding: 18px 20px;
+    padding: 24px 24px 20px;
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: flex-start;
+    justify-content: flex-start;
+    gap: 18px;
 
-    gap: 12px;
     background: #080b0d;
   }
 
   .brand-group {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 14px;
   }
 
   .brand-logo {
-    width: 72px;
+    width: 92px;
     height: auto;
   }
 
   .brand-line {
     width: 1.5px;
-    height: 34px;
-    background: rgba(255,255,255,.9);
+    height: 42px;
+    background: rgba(255, 255, 255, .9);
   }
 
   .brand-copy {
     margin: 0;
     color: var(--white);
-    font-size: 14px;
+
+    font-size: 18px;
     line-height: 1.05;
-    letter-spacing: .1px;
+    letter-spacing: .15px;
     font-weight: 400;
   }
 
@@ -911,56 +883,40 @@ a { text-decoration: none; color: inherit; }
 
   .nav-links {
     display: flex;
-    justify-content: flex-start;
     align-items: center;
+    justify-content: flex-start;
 
     width: 100%;
-    gap: 24px;
+    gap: 34px;
 
     padding-top: 0;
     margin-right: 0;
 
     color: var(--white);
-    font-size: 12px;
+    font-size: 16px;
     line-height: 1;
-    font-weight: 600;
-  }
-
-  /* Título sobre la foto */
-  .hero-message {
-    position: absolute;
-    z-index: 5;
-
-    left: 22px;
-    top: 132px;
-    width: calc(100% - 44px);
-  }
-
-  .hero-message h1 {
-    margin: 0;
-    line-height: .80;
-  }
-
-  .h-orange,
-  .h-magenta,
-  .h-turquoise {
-    font-size: clamp(38px, 12vw, 54px);
-  }
-
-  .h-cream {
-    font-size: clamp(19px, 6.4vw, 28px);
-    line-height: .9;
-    letter-spacing: 2px;
-    margin-top: 2px;
     font-weight: 400;
+    letter-spacing: .2px;
   }
 
-  .h-yellow {
-    font-size: clamp(26px, 8.4vw, 36px);
-    line-height: .86;
+  /* Foto completa, sin recortar ni estirar */
+  .hero-img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+    transform: none;
+    object-fit: contain;
   }
 
-  /* En mobile dejamos solo el título sobre la imagen */
+  /* Quitamos overlay para que no tape información */
+  .hero-shade {
+    display: none;
+  }
+
+  /* En mobile ocultamos título y botones del hero */
+  .hero-message,
   .hero-actions {
     display: none;
   }
@@ -972,8 +928,9 @@ a { text-decoration: none; color: inherit; }
 
   .wrap,
   .faq-wrap {
-    width: calc(100% - 36px);
-    max-width: 420px;
+    width: calc(100% - 40px);
+    max-width: 430px;
+    margin: 0 auto;
   }
 
 
@@ -982,31 +939,40 @@ a { text-decoration: none; color: inherit; }
      ========================= */
 
   .benefits {
-    padding: 46px 0 0;
+    padding: 56px 0 0;
   }
 
   .benefits h2 {
-    font-size: 25px;
-    line-height: 1.12;
-    letter-spacing: .8px;
-    margin-bottom: 86px;
+    margin: 0 0 90px;
+    text-align: center;
+
+    font-size: 28px;
+    line-height: 1.15;
+    letter-spacing: 1px;
   }
 
   .feature-grid {
+    display: grid;
     grid-template-columns: 1fr;
-    gap: 84px;
+    gap: 88px;
   }
 
   .feature {
     min-height: auto;
     height: auto;
-    padding: 82px 24px 32px;
+
+    padding: 92px 26px 38px;
+    border-radius: 24px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .feature-icon {
-    width: 103px;
-    height: 103px;
-    top: -51px;
+    width: 112px;
+    height: 112px;
+    top: -56px;
   }
 
   .feature-icon img {
@@ -1019,24 +985,32 @@ a { text-decoration: none; color: inherit; }
   }
 
   .feature h3 {
-    font-size: 28px;
-    margin-bottom: 20px;
+    margin: 0 0 24px;
+
+    font-size: 31px;
+    line-height: 1;
+    font-weight: 900;
   }
 
   .feature p {
-    max-width: 285px;
-    font-size: 18px;
-    line-height: 1.18;
+    max-width: 320px;
+    margin: 0 auto;
+
+    font-size: 21px;
+    line-height: 1.22;
+    font-weight: 400;
+    letter-spacing: .2px;
   }
 
   .feature-green h3 {
-    font-size: 26px;
+    font-size: 29px;
     line-height: 1.05;
   }
 
   .feature-green p {
-    max-width: 285px;
-    font-size: 17.5px;
+    max-width: 320px;
+    font-size: 20px;
+    line-height: 1.2;
   }
 
 
@@ -1045,35 +1019,38 @@ a { text-decoration: none; color: inherit; }
      ========================= */
 
   .check-row {
-    margin-top: 54px;
+    margin: 58px auto 0;
+
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 14px;
+    gap: 16px;
+
     max-width: 100%;
   }
 
   .check-item {
     display: flex;
     align-items: center;
-    gap: 7px;
+    gap: 9px;
 
-    font-size: 15px;
-    line-height: 1;
+    font-size: 16px;
+    line-height: 1.1;
     font-weight: 600;
     white-space: nowrap;
   }
 
   .check-item span {
-    width: 25px;
-    height: 25px;
-    flex: 0 0 25px;
+    width: 27px;
+    height: 27px;
+    flex: 0 0 27px;
 
     display: inline-flex;
     align-items: center;
     justify-content: center;
 
-    font-size: 17px;
+    font-size: 18px;
+    line-height: 1;
   }
 
 
@@ -1082,98 +1059,105 @@ a { text-decoration: none; color: inherit; }
      ========================= */
 
   .faq {
-    padding: 62px 0 76px;
+    padding: 66px 0 78px;
   }
 
   .faq h2 {
-    font-size: 19px;
-    margin-bottom: 26px;
+    margin-bottom: 28px;
+
+    font-size: 20px;
+    line-height: 1;
   }
 
   .faq-grid {
+    display: grid;
     grid-template-columns: 1fr;
     row-gap: 0;
   }
 
   .faq article {
-    margin-bottom: 28px;
+    margin-bottom: 30px;
   }
 
   .faq h3 {
-    font-size: 15px;
-    line-height: 1.2;
+    font-size: 16px;
+    line-height: 1.25;
   }
 
   .faq p {
-    font-size: 15px;
-    line-height: 1.28;
+    font-size: 15.5px;
+    line-height: 1.32;
   }
 
 
   /* =========================
-     FOOTER MOBILE: FOTO ENTERA + BADGES ABAJO
+     FOOTER MOBILE LIMPIO
+     Foto completa + info debajo
      ========================= */
 
   .footer {
     position: relative;
-    min-height: auto;
     background: var(--graphite);
-    overflow: hidden;
+    overflow: visible;
+    min-height: auto;
 
-    /* espacio inferior para los botones de descarga */
-    padding-bottom: 74px;
+    display: flex;
+    flex-direction: column;
   }
 
+  /* Foto completa, sin recortar ni estirar */
   .footer-img {
+    position: relative;
     width: 100%;
     height: auto;
     max-width: 100%;
     display: block;
     transform: none;
+    object-fit: contain;
   }
 
+  /* En mobile el contenido baja debajo de la foto */
   .footer-content {
-    position: absolute;
+    position: relative;
+    inset: auto;
     z-index: 5;
 
-    top: 0;
-    left: 0;
-    right: 0;
-
-    /* ocupa solo la altura visual de la foto, no el espacio de los badges */
-    height: calc(100% - 74px);
-
-    padding: 0 22px;
+    width: 100%;
+    padding: 24px 24px 28px;
 
     display: flex;
-    align-items: flex-start;
-    justify-content: center;
     flex-direction: column;
-    gap: 18px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 22px;
+
+    background: var(--graphite);
   }
 
   .footer-brand {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
   }
 
   .footer-brand img {
-    width: 64px;
+    width: 82px;
     height: auto;
   }
 
   .footer-brand span {
     width: 1.5px;
-    height: 31px;
-    background: rgba(255,255,255,.9);
+    height: 38px;
+    background: rgba(255, 255, 255, .9);
   }
 
   .footer-brand p {
     margin: 0;
+
     color: var(--white);
-    font-size: 13.5px;
-    line-height: 1.05;
+    font-size: 16px;
+    line-height: 1.08;
+    font-weight: 400;
     min-width: 0;
   }
 
@@ -1181,22 +1165,21 @@ a { text-decoration: none; color: inherit; }
     font-weight: 900;
   }
 
-  /* Badges debajo de la foto */
   .store-badges {
-    position: absolute;
-    left: 22px;
-    bottom: -56px;
+    position: relative;
+    left: auto;
+    bottom: auto;
+
+    margin-left: 0;
 
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 10px;
     flex-wrap: wrap;
-
-    margin-left: 0;
   }
 
   .store-badges img {
-    height: 38px;
+    height: 42px;
     width: auto;
     max-width: none;
   }
