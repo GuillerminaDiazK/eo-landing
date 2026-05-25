@@ -909,7 +909,7 @@ a {
     max-width: none !important;
     object-fit: contain !important;
 
-    transform: scale(2) !important;
+    transform: scale(1.12) !important;
     transform-origin: center !important;
   }
 
@@ -964,14 +964,14 @@ a {
   }
 
   .benefits h2 {
-    margin: 0 0 76px !important;
+    margin: 0 0 64px !important;
 
     text-align: center !important;
     color: var(--orange) !important;
 
-    font-size: 26px !important;
-    line-height: 1.08 !important;
-    letter-spacing: 1.1px !important;
+    font-size: 21px !important;
+    line-height: 1.12 !important;
+    letter-spacing: 0.7px !important;
     font-weight: 900 !important;
   }
 
