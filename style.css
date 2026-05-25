@@ -917,6 +917,12 @@ a {
   transform-origin: center !important;
   }
 
+  .cta-download span {
+  display: inline-block !important;
+  white-space: nowrap !important;
+  transform: translateY(.5px) !important;
+}
+
   .cta-outline {
     width: clamp(84px, 21vw, 145px) !important;
     height: clamp(21px, 5.3vw, 36px) !important;
