@@ -909,7 +909,7 @@ a {
     max-width: none !important;
     object-fit: contain !important;
 
-    transform: scale(1.12) !important;
+    transform: scale(2) !important;
     transform-origin: center !important;
   }
 
