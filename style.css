@@ -905,18 +905,18 @@ a {
     ) !important;
   }
 
-  .cta-download > img {
-    width: clamp(20px, 5vw, 34px) !important;
-    height: clamp(20px, 5vw, 34px) !important;
-    min-width: clamp(20px, 5vw, 34px) !important;
-    flex: 0 0 clamp(20px, 5vw, 34px) !important;
+ .cta-download > img {
+  width: clamp(24px, 5.8vw, 40px) !important;
+  height: clamp(24px, 5.8vw, 40px) !important;
+  min-width: clamp(24px, 5.8vw, 40px) !important;
+  flex: 0 0 clamp(24px, 5.8vw, 40px) !important;
 
-    max-width: none !important;
-    object-fit: contain !important;
+  max-width: none !important;
+  object-fit: contain !important;
 
-    transform: none !important;
-    transform-origin: center !important;
-  }
+  transform: none !important;
+  transform-origin: center !important;
+}
 
   .cta-download span {
     display: inline-block !important;
