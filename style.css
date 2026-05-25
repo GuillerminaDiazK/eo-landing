@@ -1252,4 +1252,96 @@ a {
     width: auto !important;
     max-width: none !important;
   }
+
+  .faq-mobile {
+  display: none;
+}
+
+.faq-desktop {
+  display: grid;
+}
+
+/* Mobile: se oculta la FAQ normal y aparece la desplegable */
+@media (max-width: 700px) {
+
+  .faq {
+    padding: 46px 0 56px !important;
+    background: var(--cream) !important;
+  }
+
+  .faq-wrap {
+    width: calc(100% - 48px) !important;
+    max-width: 430px !important;
+    margin: 0 auto !important;
+  }
+
+  .faq h2 {
+    margin: 0 0 25px !important;
+
+    color: #238f8e !important;
+    text-transform: uppercase !important;
+
+    font-size: 15px !important;
+    line-height: 1 !important;
+    font-weight: 900 !important;
+    letter-spacing: .3px !important;
+  }
+
+  .faq-desktop {
+    display: none !important;
+  }
+
+  .faq-mobile {
+    display: block !important;
+  }
+
+  .faq-item {
+    border-bottom: 1px solid rgba(35, 143, 142, .35);
+    padding: 0 0 14px;
+    margin: 0 0 16px;
+  }
+
+  .faq-item summary {
+    cursor: pointer;
+    list-style: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+
+    color: #238f8e;
+    font-size: 13px;
+    line-height: 1.25;
+    font-weight: 900;
+  }
+
+  .faq-item summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .faq-item summary::after {
+    content: "+";
+    flex: 0 0 auto;
+
+    color: #238f8e;
+    font-size: 21px;
+    line-height: 1;
+    font-weight: 900;
+  }
+
+  .faq-item[open] summary::after {
+    content: "–";
+  }
+
+  .faq-item p {
+    margin: 12px 0 0;
+
+    color: #121416;
+    font-size: 13px;
+    line-height: 1.42;
+    font-weight: 400;
+    letter-spacing: .02px;
+    text-align: left;
+  }
 }
