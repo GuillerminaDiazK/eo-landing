@@ -906,10 +906,10 @@ a {
   }
 
  .cta-download > img {
-  width: clamp(24px, 5.8vw, 40px) !important;
-  height: clamp(24px, 5.8vw, 40px) !important;
-  min-width: clamp(24px, 5.8vw, 40px) !important;
-  flex: 0 0 clamp(24px, 5.8vw, 40px) !important;
+width: clamp(26px, 6.2vw, 44px) !important;
+height: clamp(26px, 6.2vw, 44px) !important;
+min-width: clamp(26px, 6.2vw, 44px) !important;
+flex: 0 0 clamp(26px, 6.2vw, 44px) !important;
 
   max-width: none !important;
   object-fit: contain !important;
