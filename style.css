@@ -1165,20 +1165,19 @@ a {
   }
 
   .footer-img {
-    position: absolute !important;
-    inset: 0 !important;
+  position: absolute !important;
+  inset: 0 !important;
 
-    display: block !important;
+  display: block !important;
 
-    width: 100% !important;
-    height: 100% !important;
-    max-width: none !important;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: none !important;
 
-    object-fit: cover !important;
-    object-position: center center !important;
-    transform: none !important;
-  }
-
+  object-fit: cover !important;
+  object-position: 68% center !important;
+  transform: none !important;
+}
   .footer-content {
     position: absolute !important;
     z-index: 3 !important;
