@@ -123,6 +123,42 @@
             </article>
           </div>
         </div>
+<div class="faq-mobile">
+      <details class="faq-item">
+        <summary>¿Qué es EO?</summary>
+        <p>EO es un ecosistema digital pensado para organizar, vivir y conservar cada viaje en un solo lugar.</p>
+        <p>Permite planificar la experiencia antes de partir, registrar momentos durante el viaje y transformar esos recuerdos en una bitácora digital o en un archivo listo para imprimir.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>¿Para quién está pensada la plataforma?</summary>
+        <p>Está pensada para personas que disfrutan viajar y quieren guardar sus experiencias de una manera más ordenada, emocional y significativa.</p>
+        <p>Es ideal para viajeros que suelen usar muchas aplicaciones, notas, fotos, maps y documentos por separado, y buscan una herramienta que unifique todo el proceso.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>¿Qué puedo hacer dentro de EO?</summary>
+        <p>Dentro de EO podés organizar itinerarios, guardar información importante, registrar momentos del viaje, sumar fotos, videos, textos y ubicaciones, y construir una bitácora personalizada.</p>
+        <p>También podés editar esos recuerdos después del viaje para convertirlos en una memoria digital más cuidada y coherente.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>¿EO sirve solo para planificar viajes?</summary>
+        <p>No. EO acompaña las tres etapas de la experiencia viajera: la planificación, la vivencia y el recuerdo.</p>
+        <p>La idea no es solo ayudarte a organizar mejor un viaje, sino también permitirte capturar lo vivido y conservarlo de una forma más personal, visual y duradera.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>¿Puedo convertir mi viaje en un recuerdo físico?</summary>
+        <p>Sí. Una de las funciones principales de EO es permitir que el usuario exporte su bitácora en formato PDF de alta calidad, pensado para impresión.</p>
+        <p>De esta manera, el viaje no queda perdido entre archivos, fotos sueltas o aplicaciones, sino que puede transformarse en una memoria tangible.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>¿Debo pagar algo para usar EO?</summary>
+        <p>EO contará con una versión gratuita que permitirá acceder a las funciones principales para organizar, registrar y conservar tus viajes.</p>
+      </details>
+    </div>
       </div>
     </section>
   </main>
