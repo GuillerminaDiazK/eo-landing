@@ -883,46 +883,46 @@ a {
 
   /* CTA DESCARGA CORREGIDO */
   .cta-download {
-    width: clamp(165px, 40vw, 270px) !important;
-    height: clamp(31px, 7.6vw, 51px) !important;
+  width: clamp(165px, 40vw, 270px) !important;
+  height: clamp(31px, 7.6vw, 51px) !important;
 
-    padding: 0 clamp(10px, 2vw, 14px) !important;
-    gap: clamp(6px, 1vw, 8px) !important;
+  padding: 0 6px 0 4px !important;
+  gap: 2px !important;
 
-    display: inline-flex !important;
-    align-items: center !important;
-    justify-content: center !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
 
-    font-size: clamp(12.5px, 3.15vw, 20px) !important;
-    font-weight: 400 !important;
+  font-size: clamp(12.5px, 3.15vw, 20px) !important;
+  font-weight: 400 !important;
 
-    background: linear-gradient(
-      90deg,
-      #c91f43 0%,
-      #a51b96 38%,
-      #009d9c 70%,
-      #f0c641 100%
-    ) !important;
-  }
+  background: linear-gradient(
+    90deg,
+    #c91f43 0%,
+    #a51b96 38%,
+    #009d9c 70%,
+    #f0c641 100%
+  ) !important;
+}
 
- .cta-download > img {
-width: clamp(26px, 6.2vw, 44px) !important;
-height: clamp(26px, 6.2vw, 44px) !important;
-min-width: clamp(26px, 6.2vw, 44px) !important;
-flex: 0 0 clamp(26px, 6.2vw, 44px) !important;
+.cta-download > img {
+  width: clamp(27px, 6.5vw, 44px) !important;
+  height: clamp(27px, 6.5vw, 44px) !important;
+  min-width: clamp(27px, 6.5vw, 44px) !important;
+  flex: 0 0 clamp(27px, 6.5vw, 44px) !important;
 
   max-width: none !important;
   object-fit: contain !important;
 
-  transform: none !important;
+  transform: scale(1.08) !important;
   transform-origin: center !important;
 }
 
-  .cta-download span {
-    display: inline-block !important;
-    white-space: nowrap !important;
-    transform: translateY(.5px) !important;
-  }
+.cta-download span {
+  display: inline-block !important;
+  white-space: nowrap !important;
+  transform: translateY(.5px) !important;
+}
 
   .cta-outline {
     width: clamp(84px, 21vw, 145px) !important;
