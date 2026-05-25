@@ -882,14 +882,18 @@ a {
   }
 
   .cta-download {
-    width: clamp(162px, 40vw, 270px) !important;
-    height: clamp(31px, 7.6vw, 51px) !important;
+    width: 170px !important;
+  height: 32px !important;
 
-    padding: 0 clamp(8px, 2vw, 14px) 0 clamp(5px, 1.4vw, 10px) !important;
-    gap: clamp(4px, 1vw, 8px) !important;
+  padding: 0 10px !important;
+  gap: 6px !important;
 
-    font-size: clamp(12.5px, 3.15vw, 20px) !important;
-    font-weight: 400 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  font-size: 12.5px !important;
+  font-weight: 400 !important;
 
     background: linear-gradient(
       90deg,
