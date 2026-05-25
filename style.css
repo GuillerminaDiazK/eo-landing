@@ -905,16 +905,16 @@ a {
   }
 
   .cta-download > img {
-    width: clamp(25px, 6vw, 41px) !important;
-    height: clamp(25px, 6vw, 41px) !important;
-    min-width: clamp(25px, 6vw, 41px) !important;
-    flex: 0 0 clamp(25px, 6vw, 41px) !important;
+  width: 20px !important;
+  height: 20px !important;
+  min-width: 20px !important;
+  flex: 0 0 20px !important;
 
-    max-width: none !important;
-    object-fit: contain !important;
+  max-width: none !important;
+  object-fit: contain !important;
 
-    transform: scale(1.12) !important;
-    transform-origin: center !important;
+  transform: none !important;
+  transform-origin: center !important;
   }
 
   .cta-outline {
